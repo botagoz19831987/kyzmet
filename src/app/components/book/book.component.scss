@@ -1,0 +1,94 @@
+.book{
+  &__img{}
+  &__title{
+    margin-bottom: 10px;
+  }
+  &__sub-title{
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 15px;
+    color: #212529;
+  }
+
+  &-order{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    .btn-group{
+      height: 42px;
+      background: #131231;
+      border-radius: 50px;
+      position: relative;
+      display: inline-flex;
+      vertical-align: middle;
+      padding: 5px;
+      margin-right: 15px;
+      .btn {
+        background: transparent;
+        border: none;
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 20px;
+        margin: 0;
+        opacity: 1 !important;
+        &.active{
+          background: #b18d34;
+        }
+      }
+    }
+    &__amount{
+      .btn{
+        font-size: 21px !important;
+        min-width: 40px !important;
+        display: inline-block;
+        line-height: 1;
+      }
+    }
+    &__value{
+      background: #b18d34;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      border-radius: 50px;
+      display: inline-block;
+      font-size: 16px;
+      min-width: 50px;
+      text-align: center;
+    }
+    &__buy{
+      color: #fff;
+      border: solid 1px;
+      padding: 4px 16px 5px;
+      border-radius: 35px;
+      font-size: 21px;
+      background: #146895;
+      width: 100%;
+      margin-right: 15px;
+      &:hover{
+        background: #b18d34;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .row {
+    flex-direction: column;
+  }
+  .book{
+    &__sub-title{
+      text-align: center;
+    }
+    &__text{
+      text-align: center;
+    }
+
+    &-order__buy{
+      margin-right: 0;
+    }
+  }
+}

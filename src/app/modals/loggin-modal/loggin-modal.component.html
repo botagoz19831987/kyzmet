@@ -1,0 +1,17 @@
+<div class="modal-dialog modal-sm">
+  <div class="modal-content">
+    <div class="modal-body modal-auth">
+      <p class="modal-auth__title">Для продолжения необходима авторизация</p>
+      <p class="modal-auth__sub-title">Введите Ваш логин и пароль или пройдите регистрацию</p>
+      <div class="modal-auth__form">
+        <input type="text" placeholder="email..." required #userName>
+        <input type="password" [placeholder]="'LOGIN.PASS' | translate" required #userPassword>
+      </div>
+      <div class="btn-group">
+        <div class="btn" (click)="authService.signIn(userName.value, userPassword.value)">{{'LOGIN.BTN_LOGIN' | translate}}</div>
+        <div class="btn" routerLink="/registration">{{'LOGIN.BTN_REGISTRATION' | translate}}</div>
+        <!--<div class="btn" routerLink="/forgot-password">Забыли пароль?</div>-->
+      </div>
+    </div>
+  </div>
+</div>

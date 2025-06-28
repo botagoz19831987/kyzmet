@@ -1,0 +1,18 @@
+{
+  "id": "kaztestExam",
+  "title": "КазТЕСТ",
+  "title-kz": "КазТЕСТ",
+  "topics": [
+    {
+      "id": "kaztestExam",
+      "title": "КазТЕСТ",
+      "title-kz": "КазТЕСТ",
+      "questions": [],
+      "questionsCount": 25,
+      "passingScore": 0
+    }
+  ],
+  "time": 25,
+  "questionsTotal": 25,
+  "passingScore": null
+}

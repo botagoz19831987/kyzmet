@@ -1,0 +1,94 @@
+<ng-container *ngIf="test">
+  <div class="page testing">
+    <div class="page__header test__header" [class.hlop]="isStarted || isFinished">
+      <div class="container">
+        <div class="row align-items-center">
+          <div [class.col-6]="!(isStarted || isFinished)" class="col">
+            <p class="page__title test__title">{{test.title}}</p>
+            <p class="page__sub-title test__sub-title" [innerHTML]="test.description"></p>
+            <div class="test__info test-info" *ngIf="!isStarted && !isFinished">
+              <button class="test-info__btn" (click)="onStart()">Начать тест</button>
+            </div>
+            <p class="test-results__count section__sub-title" *ngIf="isFinished">
+              Вы ответили правильно на {{correctAnswers}} из {{test.questions.length}}.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section test__main" *ngIf="isStarted || isFinished">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="test">
+            <ng-container *ngIf="isStarted && !isFinished">
+
+              <div class="test__question test-question" *ngFor="let item of test.questions; let q = index">
+                <ng-container *ngIf="activeQuestion === (q + 1)">
+                  <p class="test-question__title">{{item.title}}</p>
+
+                  <ng-container *ngIf="item.type === questionType.Radio">
+                    <label *ngFor="let variant of item.choices; let v = index"
+                           class="test-question__variant">
+                      <input type="radio"
+                             [checked]="variant === item.selectedAnswer"
+                             [value]="variant"
+                             [name]="'q' + (q + 1)"
+                             (change)="onSelectVariant($event)">
+                      {{variant}}
+                    </label>
+                  </ng-container>
+
+                  <ng-container *ngIf="item.type === questionType.Checkbox"></ng-container>
+
+
+                  <div class="test-question__footer">
+                    <button class="btn test-question__btn test-question__btn_prev"
+                            *ngIf="activeQuestion !== 1"
+                            (click)="onPrevQuestion()">Предыдущий вопрос
+                    </button>
+                    <button class="btn test-question__btn test-question__btn_next"
+                            *ngIf="activeQuestion !== test.questions.length"
+                            [disabled]="!isVariantSelected()"
+                            (click)="onNextQuestion()">Следующий вопрос
+                    </button>
+                    <button class="btn test-question__btn test-question__btn_finish"
+                            *ngIf="activeQuestion === test.questions.length"
+                            [disabled]="!isVariantSelected()"
+                            (click)="onFinish()">Завершить тест
+                    </button>
+                  </div>
+                  <div class="test__progress">
+                    Вопрос: {{activeQuestion}}/{{test.questions.length}}
+                  </div>
+                </ng-container>
+              </div>
+            </ng-container>
+
+            <div class="test__results test-results" *ngIf="isFinished">
+              <p class="test-results__count section__sub-title">
+                Вы ответили правильно на {{correctAnswers}} из {{test.questions.length}}.
+              </p>
+              <div class="test-results__questions">
+                <div class="test-results__question test-results-question"
+                     *ngFor="let item of test.questions">
+                  <p class="test-results-question__title">{{item.title}}</p>
+                  <p class="test-results-question__variant"
+                     [class.selected]="variant === item.selectedAnswer"
+                     [class.correct]="variant === item.correctAnswer"
+                     [class.inCorrect]="variant !== item.correctAnswer && variant === item.selectedAnswer"
+                     *ngFor="let variant of item.choices">
+                    {{variant}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ng-container>

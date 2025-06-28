@@ -1,0 +1,48 @@
+.payments {
+  &__header {
+    background: url('../../assets/images/bg/cards.jpeg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding: 30px 0;
+
+    & > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:before {
+      content: '';
+      background: rgba(19, 18, 49, .5);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__body {
+    padding: 0 0 30px;
+  }
+
+  &__sub-title {
+    margin: 0;
+  }
+
+  ::ng-deep .pp {
+    &__title {
+      font-size: 21px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #0c0c29;
+      margin: 45px 0 15px;
+    }
+
+    &__text {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      font-weight: 500;
+      color: #0c0c29;
+    }
+  }
+}

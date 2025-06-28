@@ -1,0 +1,82 @@
+{
+  "id": "advocacy",
+  "title": "Адвокатура",
+  "title-kz": "Адвокатура",
+  "topics": [
+    {
+      "id": "civilCodeForAdvocacy",
+      "title": "Гражданский кодекс РК",
+      "title-kz": "Қазақстан Республикасының азаматтық кодексi",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "civilProcedureCodeForAdvocacy",
+      "title": "Гражданский процессуальный кодекс РК",
+      "title-kz": "Қазақстан Республикасының Азаматтық процестік кодексі",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "criminalCode",
+      "title": "Уголовный кодекс РК",
+      "title-kz": "Қазақстан Республикасының Қылмыстық кодексi",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "codeOfCriminalProcedureForAdvocacy",
+      "title": "Уголовно-процессуальный кодекс РК",
+      "title-kz": "Қазақстан Республикасының Қылмыстық-процестік кодексi",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "adminOffensesForAdvocacy",
+      "title": "Кодекс об административных правонарушениях",
+      "title-kz": "Әкімшілік құқық бұзушылық туралы кодексi",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "antiCorruptionForAdvocacy",
+      "title": "Закон «O противодействии коррупции»",
+      "title-kz": "Сыбайлас жемқорлыққа қарсы іс-қимыл туралы",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "adminProceduresForAdvocacy",
+      "title": "Административный процедурно-процессуальный кодекс РК",
+      "title-kz": "Қазақстан Республикасының әкімшілік рәсімдік-процестік кодексі",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "advocacyAndLegalAssistance",
+      "title": "Закон «Об адвокатской деятельности и юридической помощи»",
+      "title-kz": "Адвокаттық қызмет және заң көмегі туралы",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "advocacyCombatingMoney",
+      "title": "Закон «О противодействии легализации (отмыванию) доходов, полученных преступным путем, и финансированию терроризма»",
+      "title-kz": "«Қылмыстық жолмен алынған кірістерді заңдастыруға (жылыстатуға) және терроризмді қаржыландыруға қарсы іс-қимыл туралы» Заң",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    }
+  ],
+  "time": 90,
+  "questionsTotal": 100,
+  "passingScore": 70
+}

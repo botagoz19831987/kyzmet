@@ -1,0 +1,56 @@
+<div class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" [routerLink]="'/'">
+        <img src="../../../assets/images/logo_e.png" class="header__logo" alt="Kyzmet Logo">
+      </a>
+      <div class="language-switcher language-switcher-top" style="margin: 0 20px 0 auto">
+        <button class="language-switcher__btn"
+                [ngClass]="{'active': activeLanguage === 'ru'}"
+                (click)="onChangeLanguage('ru')">RU</button>
+        <button class="language-switcher__btn"
+                [ngClass]="{'active': activeLanguage === 'kz'}"
+                (click)="onChangeLanguage('kz')">KZ</button>
+      </div>
+      <button class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              (click)="toggleNavbar()">
+        <img src="../../../assets/icons/menu.png" alt="">
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"
+              *ngFor="let item of navItems"
+              [ngStyle]="{'display': item.link === '/education' && isLoggedIn ? 'none' : 'initial'}"
+              [ngClass]="{'active': isActiveLink(item.link)}">
+            <a class="nav-link" [routerLink]="'..' + item.link" (click)="toggleNavbar()">{{item.title | translate}}</a>
+          </li>
+          <li>
+            <div class="language-switcher">
+              <button class="language-switcher__btn"
+                      [ngClass]="{'active': activeLanguage === 'ru'}"
+                      (click)="onChangeLanguage('ru')">RU</button>
+              <button class="language-switcher__btn"
+                      [ngClass]="{'active': activeLanguage === 'kz'}"
+                      (click)="onChangeLanguage('kz')">KZ</button>
+            </div>
+          </li>
+
+          <li class="logout mt-4 mt-md-0">
+            <a *ngIf="isLoggedIn" (click)="authService.logout()">
+              <span>{{'LOGIN.LOGOUT' | translate}}</span>
+              <img src="../../../assets/icons/logout.svg" alt="LogOut">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+

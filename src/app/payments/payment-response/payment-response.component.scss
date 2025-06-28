@@ -1,0 +1,14 @@
+.success {
+  height: calc(100vh - 271.5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 170px;
+  }
+  p {
+    font-size: 32px;
+    font-weight: 500;
+  }
+}

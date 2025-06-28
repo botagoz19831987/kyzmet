@@ -1,0 +1,228 @@
+<app-preloader *ngIf="isLoading"></app-preloader>
+<ng-container *ngIf="exam">
+  <div class="page exam" *ngIf="!(isFinished && !isResults)">
+    <div class="page__header exam__header" [class.hlop]="isStarted || isFinished">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text-center">
+            <p class="page__title  exam__title">{{activeLanguage === 'kz' ? exam['title-kz'] : exam.title}}</p>
+            <div class="exam__triggers">
+              <div class="trigger">
+                <div class="trigger__top">
+                  <span class="trigger__value">{{exam.time}}</span>
+                  <img class="trigger__img" src="../../../assets/icons/time.svg" alt="">
+                </div>
+                <div class="trigger__bottom">
+                  <span class="trigger__text">{{ 'EXAM.TIME' | translate }}</span>
+                </div>
+              </div>
+              <div class="trigger">
+                <div class="trigger__top">
+                  <span class="trigger__value">{{exam.questionsTotal}}</span>
+                  <img class="trigger__img" src="../../../assets/icons/question.svg" alt="">
+                </div>
+                <div class="trigger__bottom">
+                  <span class="trigger__text">{{ 'EXAM.COUNT' | translate }}</span>
+                </div>
+              </div>
+              <div class="trigger">
+                <div class="trigger__top">
+                  <span class="trigger__value">{{exam.passingScore}}</span>
+                  <img class="trigger__img" src="../../../assets/icons/goal.svg" alt="">
+                </div>
+                <div class="trigger__bottom">
+                  <span class="trigger__text">{{ 'EXAM.SCORE' | translate }}</span>
+                </div>
+              </div>
+            </div>
+            <div class="zazaz-z">
+              <button class="exam__btn" (click)="onStart(true); cd.begin()">{{ 'EXAM.START' | translate }}</button>
+              <br>
+              <a class="exam__btn-link" (click)="onStart(false)">{{ 'EXAM.START_UNLIMITED' | translate }}</a>
+            </div>
+            <div class="exam__countdown" [class.d-none]="isFinished || !isCdVisible">
+              {{ 'EXAM.TIME_LEFT' | translate }}:
+              <countdown #cd [config]="{ leftTime: (exam.time * 60), demand: true }"
+                         (event)="timeIsOver($event)"></countdown>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section test__main" *ngIf="(isStarted || isFinished) && !isResults">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="test">
+            <div *ngIf="!isFinished" class="col-12">
+              <ul class="topic-progress__list">
+                <li *ngFor="let topic of exam.topics; let i = index"
+                    [class.active]="topic.id === activeTopic"
+                    (click)="onSelectTopic(topic.id)">
+                  <p>
+                    <ng-container *ngIf="!topic.isSectionCompleted">{{activeLanguage === 'kz' ? topic['title-kz'] : topic.title}}</ng-container>
+                    <ng-container *ngIf="topic.isSectionCompleted">{{activeLanguage === 'kz' ? topic['title-kz'] : topic.title}} <br>&#10003;</ng-container>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <ng-container *ngIf="isStarted && !isFinished">
+              <ng-container *ngFor="let topic of exam.topics">
+                <div *ngIf="topic.id === activeTopic">
+                  <div class="test__question test-question" *ngFor="let item of topic.questions; let q = index">
+                    <ng-container *ngIf="activeQuestion === (q + 1)">
+                      <p class="test-question__title">{{item?.title}}</p>
+
+                      <ng-container *ngIf="item?.type === questionType.Radio">
+                        <label *ngFor="let variant of item?.choices; let v = index"
+                               class="test-question__variant">
+                          <input type="radio"
+                                 [checked]="variant === item?.selectedAnswer"
+                                 [value]="variant"
+                                 [name]="'q' + (q + 1)"
+                                 (change)="onSelectVariant($event, topic)">
+                          {{variant}}
+                        </label>
+                      </ng-container>
+
+                      <ng-container *ngIf="item?.type === questionType.Checkbox"></ng-container>
+
+
+                      <div class="test-question__footer">
+                        <button class="btn test-question__btn test-question__btn_prev"
+                                [disabled]="activeTopic === exam.topics[0].id && activeQuestion === 1"
+                                (click)="onPrevQuestion()">{{ 'EXAM.PREV_QUESTION' | translate }}
+                        </button>
+                        <button class="btn test-question__btn test-question__btn_next"
+                                (click)="onNextQuestion()">
+                          {{(isLastQuestion ? 'EXAM.END_TEST' : 'EXAM.NEXT_QUESTION') | translate}}
+                        </button>
+                      </div>
+                    </ng-container>
+                  </div>
+                </div>
+              </ng-container>
+            </ng-container>
+            <ng-container *ngIf="isFinished">
+              <div class="results row align-items-center text-center"
+                   [class.results_failed]="isFailed || isTimedOut"
+                   [class.results_passed]="isPassed">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                  <p class="results__title">{{resultTitle}}</p>
+                  <p class="results__description">{{resultDescription}}</p>
+                  <button class="results__btn"
+                          (click)="onShowResults()">
+                    {{ 'EXAM.SHOW_RESULTS' | translate }}
+                  </button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <img class="results__img"
+                       [src]="'../../../assets/images/results/' + resultImg"
+                       alt="">
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="question-progress" *ngIf="isStarted && !isFinished && !isResults">
+    <div class="container">
+      <div class="row question-progress_r">
+        <div class="col justify-content-between d-flex flex-row">
+          <ul class="question-progress__list" *ngIf="topicById(activeTopic).questions.length > 1">
+            <li *ngFor="let question of topicById(activeTopic).questions; let i = index"
+                [class.active]="activeQuestion === i + 1"
+                [class.answered]="question?.selectedAnswer"
+                (click)="onSelectQuestion(i + 1)">
+              {{i + 1}}
+            </li>
+          </ul>
+          <button class="endbutton" (click)="onStop()">
+            {{ 'EXAM.END_TEST' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="test__results test-results" *ngIf="isResults">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <!--<p class="test-results__count section__sub-title">
+            {{ 'EXAM.YOUR_RESULTS' | translate }}: <strong>{{getCorrectAnswersCount}}/{{exam.questionsTotal}}</strong>
+          </p>-->
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">{{ 'EXAM.TASK' | translate }}</th>
+                <th scope="col">{{ 'EXAM.SCORED' | translate }}</th>
+                <th scope="col">{{ 'EXAM.SCORE' | translate }}</th>
+              </tr>
+            </thead>
+            <tbody>
+
+            <tr *ngFor="let topic of exam.topics; let i = index">
+              <td>
+                <div *ngIf="activeLanguage === 'ru'">{{topic.title}}</div>
+                <div *ngIf="activeLanguage === 'kz'">{{topic['title-kz']}}</div>
+              </td>
+              <td>{{correctAnswers[i]}} / {{topic.questionsCount}}</td>
+              <td>
+                <div>{{topic.passingScore}}
+                  <img *ngIf="correctAnswers[i] >= topic.passingScore" src="assets/icons/checkmark.svg" alt="checkmark">
+                  <img *ngIf="correctAnswers[i] < topic.passingScore" src="assets/icons/cross-red.svg" alt="cross">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>{{ 'EXAM.YOUR_RESULTS' | translate }}</td>
+              <td>{{getCorrectAnswersCount}} / {{exam.questionsTotal}}</td>
+              <td>{{exam.passingScore}}
+                <img *ngIf="getCorrectAnswersCount >= exam.passingScore" src="assets/icons/checkmark.svg" alt="checkmark">
+                <img *ngIf="getCorrectAnswersCount < exam.passingScore" src="assets/icons/cross-red.svg" alt="cross">
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <ng-container *ngFor="let item of exam.topics">
+            <div class="test-results__section">
+              <p class="test-results__section-title">{{activeLanguage === 'kz' ? item['title-kz'] : item.title}}</p>
+              <div class="test-results__questions">
+
+                <ng-container *ngFor="let item of item.questions">
+                  <div class="test-results__question test-results-question">
+                    <p class="test-results-question__title">{{item?.title}}</p>
+                    <label *ngFor="let variant of item?.choices; let v = index"
+                           [class.selected]="variant === item?.selectedAnswer"
+                           [class.correct]="variant === item?.correctAnswer"
+                           [class.inCorrect]="variant !== item?.correctAnswer && variant === item?.selectedAnswer"
+                           class="test-question__variant">
+                      <input type="radio"
+                             [disabled]="true"
+                             [checked]="variant === item?.selectedAnswer"
+                             [value]="variant">
+                      {{variant}}
+                    </label>
+                  </div>
+                </ng-container>
+
+              </div>
+            </div>
+          </ng-container>
+          <button  class="endbutton" [routerLink]="'/account'">
+            {{ 'EXAM.BACK_HOME' | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+

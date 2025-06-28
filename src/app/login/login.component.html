@@ -1,0 +1,23 @@
+<app-preloader *ngIf="isLoading"></app-preloader>
+<div class="page login">
+  <div class="page__header login__header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <p class="page__title login__title" [innerHTML]="'LOGIN.TITLE' | translate"></p>
+          <p class="page__sub-title login__sub-title" [innerHTML]="'LOGIN.SUB_TITLE' | translate "></p>
+          <div class="login__form">
+            <input type="text" placeholder="email..." required #userName>
+            <input type="password" [placeholder]="'LOGIN.PASS' | translate" required #userPassword>
+          </div>
+          <div class="btn-group">
+            <div class="btn" (click)="authService.signIn(userName.value.trim(), userPassword.value.trim())">{{'LOGIN.BTN_LOGIN' | translate}}</div>
+            <!--<div class="btn" routerLink="/registration">{{'LOGIN.BTN_REGISTRATION' | translate}}</div>-->
+            <!--<div class="btn" routerLink="/forgot-password">Забыли пароль?</div>-->
+          </div>
+          <p class="text">{{ 'LOGIN.REGISTER_INFO' | translate}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,143 @@
+.contacts{
+  &__header{
+    background: url('../../assets/images/bg/contacts.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    & > * {
+      position: relative;
+      z-index: 2;
+    }
+    &:before{
+      content: '';
+      background: rgba(19, 18, 49, .5);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .row{
+      height: calc(100vh - 267px);
+    }
+  }
+  &__sub-title{
+    margin: 0;
+  }
+}
+.contact{
+  &-item{
+    margin-bottom: 10px;
+    &__icon{
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin: 0 10px 0 0;
+    }
+    &__link{
+      color: #fff;
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      p {
+        white-space: nowrap;
+        margin: 0;
+        width: 100%;
+      }
+
+      img {
+        min-height: 40px;
+        min-width: 40px;
+        margin-right: 12px;
+        margin-left: 12px;
+      }
+
+      &:hover {
+        p {
+          color: #b18d34;
+        }
+      }
+    }
+  }
+  &-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+  &-list{
+    margin: 25px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    li{
+      display: flex;
+      justify-content: start;
+      margin: 0 30px 0 0;
+      color: #fff;
+      align-items: end;
+      height: 100%;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 100px;
+    }
+  }
+}
+.btn-primary{
+  width: 100%;
+  background: #b18d34;
+  border: solid 1px #b18d34;
+  &:hover{
+    background: #8c6c1f;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact{
+    &-lists {
+      flex-direction: column;
+      gap: 0;
+    }
+    &-list {
+      align-items: center;
+      margin: 0 !important;
+
+      &:nth-of-type(1) {
+        margin-bottom: -24px !important;
+      }
+
+      li {
+        margin: 24px 0 !important;
+      }
+    }
+    &-item{
+      &__link{
+        font-size: 22px;
+        justify-content: flex-start;
+        p {
+          text-align: start;
+        }
+        p:nth-of-type(2) {
+          flex-basis: 100%;
+        }
+      img {
+          width: 30px;
+          height: 30px;
+          min-height: 30px;
+          min-width: 30px;
+        margin-left: 0;
+        }
+      }
+    }
+  }
+}

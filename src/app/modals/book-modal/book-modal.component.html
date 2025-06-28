@@ -1,0 +1,18 @@
+<div class="modal-dialog modal-sm">
+  <div class="modal-content">
+    <div class="modal-body modal-auth">
+      <p class="modal-auth__title">Заполните форму</p>
+      <p class="modal-auth__sub-title">И наш менеджер свяжется с Вами в течении 15 минут</p>
+      <div class="modal-auth__form">
+        <input type="text" placeholder="Имя..." required #name>
+        <input type="number" placeholder="Номер телефона..." required #phone>
+        <input type="email" placeholder="Email..." #email>
+      </div>
+      <div class="btn-group">
+        <button class="btn"
+             [disabled]="name.value.length < 3 || phone.value.length < 3"
+             (click)="onSend(name.value, phone.value, email.value)">Отправить</button>
+      </div>
+    </div>
+  </div>
+</div>

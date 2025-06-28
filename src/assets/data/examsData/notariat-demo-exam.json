@@ -1,0 +1,18 @@
+{
+  "id": "notariatDemoExam",
+  "title": "ДЕМО тест по нотариату",
+  "title-kz": "Нотариат бойынша ДЕМО тестілеуден",
+  "topics": [
+    {
+      "id": "notariatDemo",
+      "title": "ДЕМО тест по нотариату",
+      "title-kz": "Нотариат бойынша ДЕМО тестілеуден",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    }
+  ],
+  "time": 30,
+  "questionsTotal": 15,
+  "passingScore": 5
+}

@@ -1,0 +1,195 @@
+<div class="page admin">
+  <div class="page__header admin__header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-6">
+          <p class="page__title admin__title" [innerHTML]="'ADMIN.TITLE' | translate"></p>
+          <p class="page__sub-title admin__sub-title" [innerHTML]="'ADMIN.SUB_TITLE' | translate "></p>
+        </div>
+        <div class="col-6"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 justify-content-around">
+          <ng-container *ngIf="activeView === 'users'">
+            <div class="w-50">
+              <label for="searchUser" class="form-label" style="font-weight: 500">Найти пользователя</label>
+              <input [(ngModel)]="searchUser" type="text" class="form-control" id="searchUser" placeholder="Емейл...">
+            </div>
+          </ng-container>
+        </div>
+        <div class="col text-right">
+          <div class="btn-group">
+            <button class="admin__btn"
+                    *ngFor="let item of navigation"
+                    [ngClass]="{'active': activeView === item.view}"
+                    (click)="onChangeView(item.view)"
+                    [disabled]="activeView === item.view">{{item.title}}</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="position: relative">
+          <div class="view-wrapper">
+            <ng-container *ngIf="activeView === 'users'">
+              <ng-container  *ngIf="(getRequests(users) | userSearch: searchUser).length">
+                <div class="d-flex justify-content-between mt-4">
+                  <p class="table__title">Заявки на получения доступа:</p>
+                  <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="admin__btn dropdown-toggle"
+                            aria-controls="dropdown-basic">
+                      Выбрать сортировку<span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                        role="menu" aria-labelledby="button-basic">
+                      <li role="menuitem"><a class="dropdown-item" (click)="onSortUsers('common')">Стандартная</a></li>
+                      <li role="menuitem"><a class="dropdown-item" (click)="onSortUsers('request')">По дате запроса</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Телефон</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Программа</th>
+                    <th scope="col">Длительность</th>
+                    <th scope="col">Стоимость</th>
+                    <th scope="col">Дата запроса</th>
+                    <th scope="col">{{selectedSort}}</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr
+                          *ngFor="let user of getRequests(users) | userSearch: searchUser | paginate: { itemsPerPage: 10, currentPage: p1, id: 'first' }">
+                    <td>{{user.name}}</td>
+                    <td>{{user.phone}}</td>
+                    <td>{{user.email}}</td>
+                    <td>
+                      {{onGetProductDetails(user.request.product).title ? onGetProductDetails(user.request.product).title : onGetProductDetails(user.request.product).examID}}
+                    </td>
+                    <td>{{onGetProductDetails(user.request.product).duration}} {{onGetProductDetails(user.request.product).duration > 3 ? 'дней' : 'дня'}}</td>
+                    <td>{{onGetProductDetails(user.request.product).price}} ₸</td>
+                    <td>{{getDate(user.request.time) ? (getDate(user.request.time) | date:'dd/MM/yyyy') : '---'}}</td>
+                    <td>
+                      <button (click)="onGrantAccess(user)">Одобрить</button>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+                <pagination-controls (pageChange)="p1 = $event" id="first" class="my-pagination"></pagination-controls>
+              </ng-container>
+
+
+              <ng-container *ngIf="(getActiveUsers(users) | userSearch: searchUser).length">
+                <p class="table__title">Активные пользователи платформы:</p>
+                <table class="table" *ngIf="users && users.length > 0">
+                  <thead>
+                  <tr>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Телефон</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Программа</th>
+                    <th scope="col">Дата окончания</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <ng-container
+                          *ngFor="let user of getActiveUsers(users) | userSearch: searchUser | paginate: { itemsPerPage: 10, currentPage: p2, id: 'second' }">
+                    <tr>
+                      <td>{{user.name}}</td>
+                      <td>{{user.phone}}</td>
+                      <td>{{user.email}}</td>
+                      <td>{{onGetProductDetails(user.product).title ? onGetProductDetails(user.product).title : onGetProductDetails(user.product).examID}}</td>
+                      <td>{{user.expirationDate | date:'dd/MM/yyyy'}}</td>
+                      <td>
+                        <button (click)="onSuspendAccess(user)">Приостановить</button>
+                      </td>
+                    </tr>
+                  </ng-container>
+                  </tbody>
+                </table>
+                <pagination-controls (pageChange)="p2 = $event" id="second" class="my-pagination"></pagination-controls>
+              </ng-container>
+
+              <ng-container *ngIf="(getExpiredUsers(users) | userSearch: searchUser).length">
+                <p class="table__title">Доступ приостановлен:</p>
+                <table class="table" *ngIf="users && users.length > 0">
+                  <thead>
+                  <tr>
+                    <th scope="col">Имя</th>
+                    <th scope="col">Телефон</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Программа</th>
+                    <th scope="col">Дата окончания</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <ng-container
+                          *ngFor="let user of getExpiredUsers(users) | userSearch: searchUser | paginate: { itemsPerPage: 10, currentPage: p3, id: 'third' }">
+                    <tr>
+                      <td>{{user.name}}</td>
+                      <td>{{user.phone}}</td>
+                      <td>{{user.email}}</td>
+                      <td>{{onGetProductDetails(user.product).title ? onGetProductDetails(user.product).title : onGetProductDetails(user.product).examID}}</td>
+                      <td>{{user.expirationDate | date:'dd/MM/yyyy'}}</td>
+                      <td>
+                        <button class="mb-2" (click)="onExtendAccess(user)">Продлить</button>
+                        <button (click)="onDeleteUser(user.uid)">Удалить</button>
+                      </td>
+                    </tr>
+                  </ng-container>
+                  </tbody>
+                </table>
+                <pagination-controls (pageChange)="p3 = $event" id="third" class="my-pagination"></pagination-controls>
+              </ng-container>
+            </ng-container>
+            <div *ngIf="activeView === 'exams'" class="text-center">
+              <p class="page-description">
+                Вы можете загрузить новый экзамен нажав на кнопку <strong>Выбрать файл</strong>. <br>
+                Файл должен быть в <strong>JSON</strong> формате и должен иметь такую же структуру как описана в файле
+                <strong>ReadMe</strong>.
+              </p>
+              <input style="display: none"
+                     type="file" (change)="onFileChanged($event)"
+                     #fileInput>
+
+              <div *ngIf="lessonResult" class="json-viewer">
+                <ngx-json-viewer [json]="lessonResult" [expanded]="false"></ngx-json-viewer>
+              </div>
+
+              <button class="btn btn_select" *ngIf="!lessonResult"
+                      (click)="fileInput.click()">Выбрать файл
+              </button>
+              <ng-container *ngIf="lessonResult">
+                <button class="btn btn_remove" (click)="onRemoveFile()">Удалить Файл</button>
+                <button class="btn btn_upload" (click)="onUpload('products')">Загрузить продукт в FireBase</button>
+                <button class="btn btn_upload" (click)="onUpload('tests')">Загрузить тест в FireBase</button>
+                <button class="btn btn_upload" (click)="onUpload('exams')">Загрузить экзамен в FireBase</button>
+              </ng-container>
+
+            </div>
+
+            <ng-container *ngIf="activeView === 'phones'">
+              <div class="phones">
+                <div class="mb-3 w-50">
+                  <label for="phoneNumber" class="form-label">Тех. поддержка</label>
+                  <input [(ngModel)]="phoneNumber" type="email" class="form-control" id="phoneNumber" placeholder="Телефон...">
+                </div>
+                <div type="button" class="btn btn-secondary" (click)="saveNumber()">Сохранить номер</div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

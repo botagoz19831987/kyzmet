@@ -1,0 +1,29 @@
+.footer{
+  background: #131231;
+  padding: 15px;
+  p {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: rgb(177 141 52);
+  }
+  a{
+    color: rgb(177 141 52);
+    text-decoration: none;
+    &:hover{
+      color: #f8eb9c;
+      text-decoration: none;
+    }
+  }
+  &__left{}
+  &__right{
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer{
+    p{
+      text-align: center;
+    }
+  }
+}

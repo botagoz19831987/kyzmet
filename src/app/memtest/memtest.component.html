@@ -1,0 +1,858 @@
+<app-preloader *ngIf="isLoading"></app-preloader>
+<div class="page home" xmlns="http://www.w3.org/1999/html">
+  <div class="page__header home__header">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <p class="page__title home__title">{{ 'HOME.TITLE' | translate }}</p>
+          <p class="page__sub-title home__sub-title">{{ 'HOME.SUB_TITLE' | translate }}</p>
+          <div class="home__down">
+            <img src="../../assets/icons/down-arrow.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home__products" *ngIf="prod && prod.length > 0">
+      <div class="container">
+        <div class="row justify-content-center" *ngIf="'LANG' | translate">
+          <div *ngIf="!isLoggedIn" class="col-4 col-sm-2">
+            <a href="{{instructionLink}}" target="_blank">
+              <img style="cursor: pointer;"
+                   class="test__img w-100"
+                   src="../../assets/images/{{'LANG' | translate}}/6.png"
+                   alt=""> <!--admin-->
+            </a>
+          </div>
+          <div class="col-4 col-sm-2 mb-0 mb-sm-4">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/1.png"
+                 alt=""
+                 (click)="openModal(admin, 'modal-tariff')"> <!--admin-->
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/2.png"
+                 alt=""
+                 (click)="openModal(law, 'modal-tariff')"> <!--law-->
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/7.png"
+                 alt=""
+                 (click)="openModal(notariat, 'modal-tariff')"> <!--law-->
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/8.png"
+                 alt=""
+                 (click)="openModal(advocacy, 'modal-tariff')"> <!--law-->
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/3.png"
+                 alt=""
+                 (click)="onBook()">
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/4.png"
+                 alt=""
+                 (click)="openModal(govForPeople, 'modal-tariff')">
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/9.png"
+                 alt=""
+                 (click)="openModal(reserve, 'modal-tariff')"> <!--law-->
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/10.png"
+                 alt=""
+                 (click)="openModal(headOfEducationalOrganization, 'modal-tariff')"> <!--law-->
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/11.png"
+                 alt=""
+                 (click)="openModal(judicialcorpus, 'modal-tariff')">
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/12.png"
+                 alt=""
+                 (click)="openModal(privateBailiff, 'modal-tariff')"> <!--law-->
+          </div>
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/5.png"
+                 alt=""
+                 (click)="openModal(corpA, 'modal-tariff')"> <!--corpA-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section_testing">
+  <div class="section_form">
+    <div class="container">
+      <h4 *ngIf="!requestToTelegramSent">{{ 'FORM.TITLE' | translate }}</h4>
+      <form *ngIf="!requestToTelegramSent" class="row align-content-center g-3" (ngSubmit)="sendToTelegram()">
+        <div class="mb-3 col-12 col-sm-5 item">
+          <label for="name" class="form-label">{{ 'FORM.NAME' | translate }}</label>
+          <input [ngModelOptions]="{standalone: true}" [(ngModel)]="formName" type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3 col-12 col-sm-5 item">
+          <label for="phone" class="form-label">{{ 'FORM.PHONE' | translate }}</label>
+          <input [ngModelOptions]="{standalone: true}" [(ngModel)]="formNumber" type="number" class="form-control" id="phone">
+        </div>
+        <div class="col-12 d-flex justify-content-center col-sm-2 item">
+          <button type="submit" class="btn btn-primary mb-3">{{ 'FORM.SEND' | translate }}</button>
+        </div>
+        <div *ngIf="showFormError" class="error">{{ 'FORM.ERROR' | translate }}</div>
+      </form>
+      <div class="success" *ngIf="requestToTelegramSent">
+        <h4>{{ 'FORM.SUCCESS' | translate }}</h4>
+        <img src="assets/images/successful.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="section_benefits">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <p class="section__title text-center">{{ 'HOME.BENEFITS_TITLE' | translate }}</p>
+          <div class="row justify-content-center">
+            <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 benefit">
+              <div class="benefit__inner">
+                <div class="benefit__icon">
+                  <img src="../../assets/images/benefits/b1.png" alt="">
+                </div>
+                <div class="benefit__title">{{ 'HOME.BENEFIT_1_TITLE' | translate }}</div>
+                <div class="benefit__text">{{ 'HOME.BENEFIT_1_TEXT' | translate }}</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 benefit">
+              <div class="benefit__inner">
+                <div class="benefit__icon">
+                  <img src="../../assets/images/benefits/b2.png" alt="">
+                </div>
+                <div class="benefit__title">{{ 'HOME.BENEFIT_2_TITLE' | translate }}</div>
+                <div class="benefit__text">{{ 'HOME.BENEFIT_2_TEXT' | translate }}</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 benefit">
+              <div class="benefit__inner">
+                <div class="benefit__icon">
+                  <img src="../../assets/images/benefits/b3.png" alt="">
+                </div>
+                <div class="benefit__title">{{ 'HOME.BENEFIT_3_TITLE' | translate }}</div>
+                <div class="benefit__text">{{ 'HOME.BENEFIT_3_TEXT' | translate }}</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 benefit">
+              <div class="benefit__inner">
+                <div class="benefit__icon">
+                  <img src="../../assets/images/benefits/b4.png" alt="">
+                </div>
+                <div class="benefit__title">{{ 'HOME.BENEFIT_4_TITLE' | translate }}</div>
+                <div class="benefit__text">{{ 'HOME.BENEFIT_4_TEXT' | translate }}</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 benefit">
+              <div class="benefit__inner">
+                <div class="benefit__icon">
+                  <img src="../../assets/images/benefits/b5.png" alt="">
+                </div>
+                <div class="benefit__title">{{ 'HOME.BENEFIT_5_TITLE' | translate }}</div>
+                <div class="benefit__text">{{ 'HOME.BENEFIT_5_TEXT' | translate }}</div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-6 col-md-6 col-xl-6 benefit">
+              <div class="benefit__inner">
+                <div class="benefit__icon">
+                  <img src="../../assets/images/benefits/b6.png" alt="">
+                </div>
+                <div class="benefit__title">{{ 'HOME.BENEFIT_6_TITLE' | translate }}</div>
+                <div class="benefit__text">{{ 'HOME.BENEFIT_6_TEXT' | translate }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_promo">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xs12 col-sm-12 col-md-8 col-lg-8">
+          <p class="section__title">{{ 'HOME.BOOKS_TITLE' | translate }}</p>
+          <p class="section__text mb-3">{{ 'HOME.BOOK_1' | translate }}</p>
+          <p class="section__text mb-3">{{ 'HOME.BOOK_2' | translate }}</p>
+          <p class="section__text mb-3">{{ 'HOME.BOOK_3' | translate }}</p>
+          <p class="section__text">{{ 'HOME.BOOK_4' | translate }}</p>
+          <!--<button class="testing__btn" (click)="getBooks()">Заказать книги</button>-->
+        </div>
+        <div class="col-xs12 col-sm-12 col-md-4 col-lg-4">
+          <img [src]="'../../assets/images/' + (activeLanguage === 'kz' ? 'books_kz.png' : 'books.png')" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+          <p class="section__title">{{ 'HOME.ABOUT_TITLE' | translate }}</p>
+          <div [innerHTML]="'HOME.ABOUT_TEXT' | translate"></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <img src="../../assets/images/logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section_testimonial d-none-mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="section__title text-center">{{ 'HOME.TESTIMONIALS_TITLE' | translate }}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ng-image-slider [images]="imgCollection"
+                           [infinite]="true"
+                           [imageSize]="{width: '20%', height: '300px', space: 10}" [manageImageRatio]="true"></ng-image-slider>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #admin>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.ADMIN' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of adminExams; index as i"
+         (click)="onExamClick(item.id)">
+      <p *ngIf="i !== 3" class="triggers__title">{{activeLanguage === 'kz' ? '№' + (i + 1) + ' ' + ( 'EXAM.PROGRAM' | translate) : ( 'EXAM.PROGRAM' | translate)+ ' №' + (i + 1) }}</p>
+      <p *ngIf="i === 3" class="triggers__title">{{activeLanguage !== 'kz' ? 'Пилотный проект' : 'Пилоттық жоба' }}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('demoExam')">
+    <p>{{ 'EXAM.DEMO_TITLE' | translate }}</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #law>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.PRAVO' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of lawExams; index as i"
+         (click)="onExamClick(item.id)">
+      <p class="triggers__title">{{activeLanguage === 'kz' ? '№' + (i + 1) + ' ' + ( 'EXAM.PROGRAM' | translate) : ( 'EXAM.PROGRAM' | translate)+ ' №' + (i + 1) }}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('demoExam')">
+    <p>{{ 'EXAM.DEMO_TITLE' | translate }}</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #govForPeople>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.CON' | translate }}</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of conExams; index as i"
+         (click)="onExamClick(item.id)">
+      <p class="triggers__title">{{activeLanguage === 'kz' ? '№' + (i + 1) + ' ' + ( 'EXAM.PROGRAM' | translate) : ( 'EXAM.PROGRAM' | translate)+ ' №' + (i + 1) }}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('govForPeopleDemo')">
+    <p>Мемлекеттік қызмет бойынша ДЕМО тестілеуден өтіңіз</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #corpA>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.KORPUS' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of corpAExams; index as i"
+         (click)="onExamClick(item.id)">
+      <p class="triggers__title">{{activeLanguage === 'kz' ? '№' + (i + 1) + ' ' + ( 'EXAM.PROGRAM' | translate) : ( 'EXAM.PROGRAM' | translate)+ ' №' + (i + 1) }}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('demoExam')">
+    <p>{{ 'EXAM.DEMO_TITLE' | translate }}</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #notariat>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.NOTARIAT' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of notariatExams; index as i"
+         (click)="onExamClick(item.id)">
+      <p class="triggers__title">{{activeLanguage === 'kz' ? '№' + (i + 1) + ' ' + ( 'EXAM.PROGRAM' | translate) : ( 'EXAM.PROGRAM' | translate)+ ' №' + (i + 1) }}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+
+    <div class="includedLaws">
+      <ul>
+        <li class="law" *ngFor="let law of notariatIncludedLawsKz">
+          {{ law }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('notariatDemoExam')">
+    <p>Нотариат бойынша ДЕМО тестілеуден өтіңіз</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #advocacy>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.ADVOCACY' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of advocacyExams; index as i"
+         (click)="onExamClick(item.id)">
+      <p class="triggers__title">{{activeLanguage === 'kz' ? '№' + (i + 1) + ' ' + ( 'EXAM.PROGRAM' | translate) : ( 'EXAM.PROGRAM' | translate)+ ' №' + (i + 1) }}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+
+    <div class="includedLaws">
+      <ul>
+        <li class="law" *ngFor="let law of advocacyIncludedLaws">
+          {{ law }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('advocacyDemoExam')">
+    <p>Адвокаттық қызмет бойынша ДЕМО тестілеуден өтіңіз</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #headOfEducationalOrganization>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.HEADOFORGANIZATION' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <ng-container
+      *ngFor="let item of headOfEducationalOrganizationExam; index as i"
+    >
+      <div class="triggers mb-2"
+           (click)="onExamClick(item.id)">
+        <p class="triggers__title">{{item.nameOfProgramKz}}</p>
+        <div class="trigger">
+          <div class="trigger__top">
+            <span class="trigger__value">{{item.time}}</span>
+            <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+          </div>
+          <div class="trigger__bottom">
+            <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+          </div>
+        </div>
+        <div class="trigger">
+          <div class="trigger__top">
+            <span class="trigger__value">{{item.questionsTotal}}</span>
+            <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+          </div>
+          <div class="trigger__bottom">
+            <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+          </div>
+        </div>
+        <div class="trigger">
+          <div class="trigger__top">
+            <span class="trigger__value">{{item.passingScore}}</span>
+            <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+          </div>
+          <div class="trigger__bottom">
+            <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+          </div>
+        </div>
+        <button  class="triggers__btn">
+          {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+        </button>
+      </div>
+      <div class="includedLaws mb-4">
+        <ul *ngIf="i === 0">
+          <li class="law" *ngFor="let law of headOfEducationalOrganizationFirstIncludedLaws">
+            {{ law }}
+          </li>
+        </ul>
+        <ul *ngIf="i === 1">
+          <li class="law" *ngFor="let law of headOfEducationalOrganizationSecondIncludedLaws">
+            {{ law }}
+          </li>
+        </ul>
+      </div>
+    </ng-container>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('headOfEducationalOrganizationDemo')">
+    <p>Педагог мәртебесі бойынша ДЕМО тестілеуден өтіңіз</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #reserve>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.RESERVE' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div *ngIf="reserveMode" class="row justify-content-end">
+      <a class="col-12 col-md-4 mb-3 me-0 me-md-3 btn btn-secondary"
+         href="https://wa.me/77019084272?text={{ 'HOME.RESERVE.CONSULTATION_PREFIELD' | translate}}"
+         target="_blank"
+      >
+        {{ 'HOME.RESERVE.CONSULTATION' | translate }}
+      </a>
+    </div>
+    <div class="row justify-content-around">
+      <ng-container *ngIf="!reserveMode">
+        <div class="col-6 col-md-3">
+          <img class="test__img test__img-inner w-100"
+               src="../../assets/images/{{'LANG' | translate}}/13.png"
+               alt=""
+               (click)="onSetReserveMode(1)"> <!--law-->
+        </div>
+        <div class="col-6 col-md-3">
+          <img class="test__img test__img-inner w-100"
+               src="../../assets/images/{{'LANG' | translate}}/14.png"
+               alt=""
+               (click)="onSetReserveMode(2)"> <!--law-->
+        </div>
+        <div class="col-6 col-md-3">
+          <img class="test__img test__img-inner w-100"
+               src="../../assets/images/{{'LANG' | translate}}/15.png"
+               alt=""
+               (click)="onSetReserveMode(3)"> <!--law-->
+        </div>
+      </ng-container>
+      <ng-container [ngSwitch]="reserveMode">
+        <ng-container *ngSwitchCase="1">
+          <div class="included" [innerHTML]="'HOME.RESERVE.1' | translate"></div>
+        </ng-container>
+        <ng-container *ngSwitchCase="2">
+          <div class="included" [innerHTML]="'HOME.RESERVE.2' | translate"></div>
+        </ng-container>
+        <ng-container *ngSwitchCase="3">
+          <div class="included" [innerHTML]="'HOME.RESERVE.3' | translate"></div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+  <div></div>
+</ng-template>
+
+<ng-template #judicialcorpus>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.JUDICIAL' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of judicialCorpsExam; index as i"
+         (click)="onExamClick(item.id)">
+      <p class="triggers__title">{{activeLanguage === 'kz' ? '№' + (i + 1) + ' ' + ( 'EXAM.PROGRAM' | translate) : ( 'EXAM.PROGRAM' | translate)+ ' №' + (i + 1) }}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+
+    <div class="includedLaws">
+      <ul>
+        <li class="law" *ngFor="let law of judicialcorpusIncludedLaws">
+          {{ law }}
+        </li>
+      </ul>
+      <br>
+      <p class="law">
+        <b>
+          P.S. Тесттер 7 құқық салалары бойынша әзірленген, 2 «таңдау бойынша» сала жеке кабинетте ұсынылған..
+        </b>
+      </p>
+    </div>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('judicialCorpDemo')">
+    <p>Қылмыстық кодекс бойынша ДЕМО тестілеуден өтіңіз</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #privateBailiff>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{ 'EXAM.BAILIFF' | translate }}:</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of privateBailiffExam; index as i"
+         (click)="onExamClick(item.id)">
+      <p class="triggers__title">{{activeLanguage === 'kz' ? '№' + (i + 1) + ' ' + ( 'EXAM.PROGRAM' | translate) : ( 'EXAM.PROGRAM' | translate)+ ' №' + (i + 1) }}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+
+    <div class="includedLaws">
+      <ul>
+        <li class="law" *ngFor="let law of bailiffIncludedLaws">
+          {{ law }}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="!isLoggedIn" class="modal-footer" (click)="onSelectExam('privateBailiffDemo')">
+    <p>Атқарушылық iс жүргiзу бойынша ДЕМО тестілеуден өтіңіз</p>
+    <button class="triggers__btn">{{ 'EXAM.START' | translate }}</button>
+  </div>
+</ng-template>
+
+<ng-template #tes>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Тестирование по законам</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body" style="padding: 25px 15px 20px;">
+    <div class="triggers"
+         *ngFor="let item of tests"
+         (click)="onExamClick(item.id)">
+      <p class="triggers__title">{{item.title}}</p>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.time}}</span>
+          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.questionsTotal}}</span>
+          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+        </div>
+      </div>
+      <div class="trigger">
+        <div class="trigger__top">
+          <span class="trigger__value">{{item.passingScore}}</span>
+          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+        </div>
+        <div class="trigger__bottom">
+          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+        </div>
+      </div>
+      <button  class="triggers__btn">
+        {{(isLoggedIn && userProduct ? 'EXAM.START' : 'EXAM.BUY') | translate}}
+      </button>
+    </div>
+  </div>
+</ng-template>
+
+<app-loggin-modal
+        bsModal #childModal="bs-modal"
+        class="modal fade" tabindex="-1"
+        role="dialog" aria-labelledby="dialog-child-name"
+>
+</app-loggin-modal>

@@ -1,0 +1,20 @@
+<app-preloader *ngIf="isLoading"></app-preloader>
+<div class="page agreement">
+  <div class="page__header agreement__header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <p class="page__title agreement__title" [innerHTML]="'PUBLIC_OFFER_AGREEMENT.TITLE' | translate"></p>
+          <p class="page__sub-title agreement__sub-title" [innerHTML]="'PUBLIC_OFFER_AGREEMENT.SUB_TITLE' | translate "></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="agreement__body section">
+    <div class="container">
+      <div class="row">
+        <div class="col" [innerHTML]="'PUBLIC_OFFER_AGREEMENT.TEXT' | translate"></div>
+      </div>
+    </div>
+  </div>
+</div>

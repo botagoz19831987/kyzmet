@@ -1,0 +1,51 @@
+<app-preloader *ngIf="isLoading"></app-preloader>
+<div class="page contacts">
+  <div class="page__header contacts__header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+          <p class="page__title contacts__title" [innerHTML]="'CONTACTS.TITLE' | translate"></p>
+          <p class="page__sub-title contacts__sub-title" [innerHTML]="'CONTACTS.SUB_TITLE' | translate "></p>
+          <div class="contact-lists">
+            <ul class="contact-list">
+              <li>
+                <a href="https://wa.me/{{replaceSymbols(techSupportNumber)}}" class="contact-item__link" target="_blank">
+                  <p>
+                    {{ 'CONTACTS.TECH_SUPPORT' | translate}}
+                  </p>
+                  <p>
+                    <img src="assets/icons/socials/whatsapp.png" alt="whatsapp">
+                    {{ techSupportNumber }}
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="https://wa.me/77019084272" class="contact-item__link" target="_blank">
+                  <p>
+                    {{ 'CONTACTS.ADMIN' | translate}}
+                  </p>
+                  <p>
+                    <img src="assets/icons/socials/whatsapp.png" alt="whatsapp">
+                    +7(701)908-42-72
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <ul class="contact-list">
+              <li>
+                <a href="https://www.instagram.com/goskniga/?hl=ru" class="contact-item__link" target="_blank">
+                  <p><img src="assets/icons/socials/instagram.png" alt="instagram">@goskniga</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC-skkEt2cCm1fS88Rt8JYuw?view_as=subscriber" class="contact-item__link" target="_blank">
+                  <p><img src="assets/icons/socials/youtube.png" alt="youtube">youtube.com/goskniga</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

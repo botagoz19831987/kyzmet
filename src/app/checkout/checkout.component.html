@@ -1,0 +1,93 @@
+<div class="row">
+  <div class="checkout__down">
+    <img src="../../assets/icons/down-arrow-black.svg" alt="">
+  </div>
+  <div class="tariffs__title" [innerHTML]="'CHECKOUT.TITLE' | translate"></div>
+  <div class="row tariffs" *ngIf="requestedProducts && requestedProducts.length > 0">
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" *ngFor="let product of requestedProducts; let i = index">
+      <div class="tariff" [class.tariff--bordered]="i === 1">
+        <div *ngIf="i === 1" class="tariff__popular">
+          {{ 'CHECKOUT.POPULAR' | translate }}
+        </div>
+        <img class="tariff__icon"
+             src="assets/images/tariff/{{i}}.png"
+             alt="tariff-photo"
+        >
+        <p class="tariff__title">
+          <strong *ngIf="i === 0">{{ 'CHECKOUT.T1' | translate }}</strong>
+          <strong *ngIf="i === 1">{{ 'CHECKOUT.T2' | translate }}</strong>
+          <strong *ngIf="i === 2">{{ 'CHECKOUT.T3' | translate }}</strong>
+        </p>
+        <strong *ngIf="selectedLanguage === 'ru'" class="tariff__duration">
+          на {{product.duration}} {{product.duration > 3 ? 'дней' : 'дня'}}
+        </strong>
+        <strong *ngIf="selectedLanguage === 'kz'" class="tariff__duration">
+          {{product.duration}} күнге
+        </strong>
+        <ul class="tariff__items">
+          <ng-container *ngIf="!product.items?.length">
+            <li>{{ 'CHECKOUT.TEST' | translate }}</li>
+            <li *ngIf="isVideoPresent">{{ 'CHECKOUT.VIDEO' | translate }}</li>
+            <li *ngIf="isAudioPresent">{{ 'CHECKOUT.AUDIO' | translate }}</li>
+            <ng-container *ngIf="selectedLanguage === 'ru' && booksRu.length && i >= 1">
+              <li *ngFor="let book of booksRu">
+                Книга "{{replaceDoc(book)}}"
+              </li>
+            </ng-container>
+            <ng-container *ngIf="selectedLanguage === 'kz' && booksKz.length && i >= 1">
+              <li *ngFor="let book of booksKz">
+                "{{replaceDoc(book)}}" кітабі
+              </li>
+            </ng-container>
+            <ng-container *ngIf="isLawsPresent">
+              <li>{{'CHECKOUT.WORK' | translate}}</li>
+              <li>{{'CHECKOUT.LAWS' | translate}}</li>
+            </ng-container>
+            <li *ngIf="i === 2">{{ 'CHECKOUT.CASHBACK' | translate }}</li>
+          </ng-container>
+          <ng-container *ngIf="product.items?.length">
+            <li *ngFor="let item of product.items">
+              {{ item | translate}}
+            </li>
+          </ng-container>
+        </ul>
+        <div class="tariff__footer">
+          <p class="tariff__price">
+            {{product.price | productPrice}} <span>тг.</span>
+          </p>
+          <button class="tariff__button" (click)="onProgramSelect(product.id, product.price)">{{ 'CHECKOUT.SELECT' | translate }}</button>
+
+          <p class="tariff__benefit">
+            <ng-container class="profit" *ngIf="i === 1 && selectedLanguage === 'ru'">
+              {{ 'CHECKOUT.ECONOMY' | translate }}
+              <span>20%</span>
+            </ng-container>
+            <ng-container class="profit" *ngIf="i === 1 && selectedLanguage === 'kz'">
+              <span>20%</span>
+              {{ 'CHECKOUT.ECONOMY' | translate }}
+            </ng-container>
+            <ng-container class="profit" *ngIf="i === 2 && selectedLanguage === 'ru'">
+              {{ 'CHECKOUT.ECONOMY' | translate }}
+              <span>30%</span>
+            </ng-container>
+            <ng-container class="profit" *ngIf="i === 2 && selectedLanguage === 'kz'">
+              <span>30%</span>
+              {{ 'CHECKOUT.ECONOMY' | translate }}
+            </ng-container>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ps">
+    <ng-container [ngSwitch]="id">
+      <div *ngSwitchCase="'administrativeCivilServicePilotProject'">{{ 'CHECKOUT.PS.PILOT_PROJECT' | translate }}</div>
+      <div *ngSwitchCase="'headOfEducationalOrganization'">{{ 'CHECKOUT.PS.HEADMASTER' | translate }}</div>
+      <div *ngSwitchCase="'judicialCorp'">{{ 'CHECKOUT.PS.JUDGE' | translate }}</div>
+      <div *ngSwitchCase="'presidentialYouthPersonnelReserve'"
+           [innerHTML]="'CHECKOUT.PRESIDENTIAL_RESERVE_CHECKOUT_INFO' | translate"
+      ></div>
+    </ng-container>
+  </div>
+</div>
+

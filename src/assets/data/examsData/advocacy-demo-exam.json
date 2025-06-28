@@ -1,0 +1,18 @@
+{
+  "id": "advocacyDemoExam",
+  "title": "ДЕМО тест по адвокатуре",
+  "title-kz": "Адвокатура бойынша ДЕМО тест",
+  "topics": [
+    {
+      "id": "advocacyDemo",
+      "title": "ДЕМО тест по адвокатуре",
+      "title-kz": "Адвокатура бойынша ДЕМО тест",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    }
+  ],
+  "time": 30,
+  "questionsTotal": 15,
+  "passingScore": 5
+}

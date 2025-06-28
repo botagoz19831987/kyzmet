@@ -1,0 +1,18 @@
+{
+  "id": "textExam",
+  "title": "Вербальный тест (текстовый)",
+  "title-kz": "Вербалды тест (мәтіндік)",
+  "topics": [
+    {
+      "id": "textExam",
+      "title": "Вербальный тест (текстовый)",
+      "title-kz": "Вербалды тест (мәтіндік)",
+      "questions": [],
+      "questionsCount": 25,
+      "passingScore": 0
+    }
+  ],
+  "time": 25,
+  "questionsTotal": 25,
+  "passingScore": null
+}

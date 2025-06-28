@@ -1,0 +1,20 @@
+<app-preloader *ngIf="isLoading"></app-preloader>
+<div class="page payments">
+  <div class="page__header payments__header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+          <p class="page__title payments__title" [innerHTML]="'PAYMENTS.TITLE' | translate"></p>
+          <p class="page__sub-title payments__sub-title" [innerHTML]="'PAYMENTS.SUB_TITLE' | translate "></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="payments__body section">
+    <div class="container">
+      <div class="row">
+        <div class="col" [innerHTML]="'PAYMENTS.TEXT' | translate"></div>
+      </div>
+    </div>
+  </div>
+</div>

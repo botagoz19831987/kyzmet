@@ -1,0 +1,42 @@
+<div class="page login">
+  <div class="page__header login__header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <p class="page__title login__title" [innerHTML]="'REGISTRATION.TITLE' | translate"></p>
+          <p class="page__sub-title login__sub-title" [innerHTML]="'REGISTRATION.SUB_TITLE' | translate "></p>
+          <div class="login__form">
+            <input type="text"
+                   [placeholder]="'REGISTRATION.NAME' | translate"
+                   required
+                   #userName>
+            <input type="text"
+                   [placeholder]="'REGISTRATION.PHONE' | translate"
+                   required
+                   #userPhone>
+          </div>
+          <div class="login__form">
+            <input type="email"
+                   placeholder="Email"
+                   required
+                   #userEmail>
+            <input type="password"
+                   [placeholder]="'REGISTRATION.PASS' | translate"
+                   required
+                   #userPwd>
+
+            <!--{{selectedExam}}-->
+          </div>
+          <div class="btn-group">
+            <!--<div class="btn" routerLink="/login">{{'REGISTRATION.BTN_REGISTRATION' | translate}}</div>-->
+            <div class="btn"
+                 (click)="registration(userEmail.value.trim(), userPwd.value.trim(), userName.value, userPhone.value)">
+              {{'REGISTRATION.BTN_REGISTRATION' | translate}}
+            </div>
+            <!--<div class="btn" routerLink="/forgot-password">Забыли пароль?</div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

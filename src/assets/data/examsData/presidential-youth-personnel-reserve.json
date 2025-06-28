@@ -1,0 +1,10 @@
+{
+  "id": "presidentialYouthPersonnelReserve",
+  "title": "Президетский молодежный кадровый резерв",
+  "title-kz": "Президенттік жастар кадрлық резерві",
+  "innerExams": [
+    "textExam",
+    "numberExam",
+    "kaztestExam"
+  ]
+}

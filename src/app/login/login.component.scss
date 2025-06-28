@@ -1,0 +1,52 @@
+.login{
+  &__header{
+    background: url('../../assets/images/bg/acc.jpeg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    & > * {
+      position: relative;
+      z-index: 2;
+    }
+    &:before{
+      content: '';
+      background: rgba(19, 18, 49, .5);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .row{
+      height: calc(100vh - 267px);
+    }
+  }
+  &__sub-title{
+    margin: 0 0 20px 0;
+  }
+  .btn{
+    color: #fff;
+    border: solid 1px;
+    padding: 8px 24px;
+    border-radius: 35px;
+    margin: 25px 25px 0 0;
+    font-size: 21px;
+    &:hover{
+      color: #b18d34;
+      border-color: #b18d34;
+    }
+  }
+  input{
+    margin: 0 20px 0 0;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: transparent;
+  }
+  .text {
+    color: #ffffff;
+    margin-top: 24px;
+  }
+}
+
+
+

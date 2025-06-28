@@ -1,0 +1,3610 @@
+[
+  {
+    "id": "productDefault",
+    "examID": "testExam",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "assets/audio/ru/1.mp3",
+        "kz": "assets/audio/kz/1.mp3"
+      }
+    ],
+    "books": {},
+    "price": 0,
+    "duration": 0
+  },
+  {
+    "id": "product1",
+    "examID": "administrativeCivilServiceFirst",
+    "program": "first",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "5jG9R5rfjcQ",
+        "kz": "NgDXyVSO6Sk"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "7yzlIC3A0zY",
+        "kz": "ovsQJVObtT4"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/3.mp3",
+        "kz": "src/assets/audio/kz/3.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/6.mp3",
+        "kz": "src/assets/audio/kz/6.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": [],
+    "price": 8000,
+    "duration": 3
+  },
+  {
+    "id": "product2",
+    "examID": "administrativeCivilServiceFirst",
+    "program": "second",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "5jG9R5rfjcQ",
+        "kz": "NgDXyVSO6Sk"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "7yzlIC3A0zY",
+        "kz": "ovsQJVObtT4"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/3.mp3",
+        "kz": "src/assets/audio/kz/3.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/6.mp3",
+        "kz": "src/assets/audio/kz/6.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceFirst/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceFirst/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceFirst/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceFirst/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 10000,
+    "duration": 10
+  },
+  {
+    "id": "product3",
+    "examID": "administrativeCivilServiceFirst",
+    "program": "third",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "5jG9R5rfjcQ",
+        "kz": "NgDXyVSO6Sk"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "7yzlIC3A0zY",
+        "kz": "ovsQJVObtT4"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/3.mp3",
+        "kz": "src/assets/audio/kz/3.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/6.mp3",
+        "kz": "src/assets/audio/kz/6.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceFirst/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceFirst/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceFirst/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceFirst/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 18000,
+    "duration": 20
+  },
+  {
+    "id": "product4",
+    "examID": "administrativeCivilServiceSecond",
+    "program": "first",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {},
+    "price": 6000,
+    "duration": 3
+  },
+  {
+    "id": "product5",
+    "examID": "administrativeCivilServiceSecond",
+    "program": "second",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceSecond/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceSecond/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceSecond/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceSecond/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 8000,
+    "duration": 10
+  },
+  {
+    "id": "product6",
+    "examID": "administrativeCivilServiceSecond",
+    "program": "third",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceSecond/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceSecond/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceSecond/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceSecond/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 15000,
+    "duration": 20
+  },
+  {
+    "id": "product7",
+    "examID": "administrativeCivilServiceThird",
+    "program": "first",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {},
+    "price": 4000,
+    "duration": 3
+  },
+  {
+    "id": "product8",
+    "examID": "administrativeCivilServiceThird",
+    "program": "second",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceThird/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceThird/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceThird/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceThird/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 6000,
+    "duration": 10
+  },
+  {
+    "id": "product9",
+    "examID": "administrativeCivilServiceThird",
+    "program": "third",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceThird/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServiceThird/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceThird/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServiceThird/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 10000,
+    "duration": 20
+  },
+  {
+    "id": "product10",
+    "examID": "lawEnforcementServiceFirst",
+    "program": "first",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {},
+    "price": 8000,
+    "duration": 3
+  },
+  {
+    "id": "product11",
+    "examID": "lawEnforcementServiceFirst",
+    "program": "second",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceFirst/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceFirst/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceFirst/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceFirst/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 10000,
+    "duration": 10
+  },
+  {
+    "id": "product12",
+    "examID": "lawEnforcementServiceFirst",
+    "program": "third",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceFirst/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceFirst/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceFirst/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceFirst/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 18000,
+    "duration": 20
+  },
+  {
+    "id": "product13",
+    "examID": "lawEnforcementServiceSecond",
+    "program": "first",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {},
+    "price": 7000,
+    "duration": 3
+  },
+  {
+    "id": "product14",
+    "examID": "lawEnforcementServiceSecond",
+    "program": "second",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceSecond/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceSecond/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceSecond/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceSecond/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 9000,
+    "duration": 10
+  },
+  {
+    "id": "product15",
+    "examID": "lawEnforcementServiceSecond",
+    "program": "third",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceSecond/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceSecond/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceSecond/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceSecond/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 16000,
+    "duration": 20
+  },
+  {
+    "id": "product19",
+    "examID": "lawEnforcementServiceThird",
+    "program": "first",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "assets/audio/ru/2.mp3",
+        "kz": "assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "assets/audio/ru/5.mp3",
+        "kz": "assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {},
+    "price": 6000,
+    "duration": 3
+  },
+  {
+    "id": "product20",
+    "examID": "lawEnforcementServiceThird",
+    "program": "second",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "assets/audio/ru/2.mp3",
+        "kz": "assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "assets/audio/ru/5.mp3",
+        "kz": "assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceThird/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceThird/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceThird/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceThird/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 8000,
+    "duration": 10
+  },
+  {
+    "id": "product21",
+    "examID": "lawEnforcementServiceThird",
+    "program": "third",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "xZdNhf61Aws",
+        "kz": "FkpRslwipGA"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "assets/audio/ru/2.mp3",
+        "kz": "assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "assets/audio/ru/5.mp3",
+        "kz": "assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/13.mp3",
+        "kz": "src/assets/audio/kz/13.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceThird/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/lawEnforcementServiceThird/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceThird/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/lawEnforcementServiceThird/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 14000,
+    "duration": 20
+  },
+  {
+    "id": "product22",
+    "examID": "corpAFirst",
+    "program": "first",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "0bpVHleIDyc",
+        "kz": "w43JXLzoUlo"
+      },
+      {
+        "ru": "5jG9R5rfjcQ",
+        "kz": "NgDXyVSO6Sk"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "7yzlIC3A0zY",
+        "kz": "ovsQJVObtT4"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/11.mp3",
+        "kz": "src/assets/audio/kz/11.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/3.mp3",
+        "kz": "src/assets/audio/kz/3.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/6.mp3",
+        "kz": "src/assets/audio/kz/6.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {},
+    "price": 12000,
+    "duration": 3
+  },
+  {
+    "id": "product23",
+    "examID": "corpAFirst",
+    "program": "second",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "0bpVHleIDyc",
+        "kz": "w43JXLzoUlo"
+      },
+      {
+        "ru": "5jG9R5rfjcQ",
+        "kz": "NgDXyVSO6Sk"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "7yzlIC3A0zY",
+        "kz": "ovsQJVObtT4"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/11.mp3",
+        "kz": "src/assets/audio/kz/11.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/3.mp3",
+        "kz": "src/assets/audio/kz/3.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/6.mp3",
+        "kz": "src/assets/audio/kz/6.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "КОРПУС_А_-_книга_для_руководителя_2024_рус.pdf",
+          "file": "src/assets/books/corpAFirst/ru/A_corp_book_for_headmaster_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/corpAFirst/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "А_КОРПУСЫ_-_басшыға_арналған_кітап_2024_каз.pdf",
+          "file": "src/assets/books/corpAFirst/kz/A_corp_book_for_headmaster_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/corpAFirst/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 15000,
+    "duration": 10
+  },
+  {
+    "id": "product24",
+    "examID": "corpAFirst",
+    "program": "third",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "zLhrPrmoAKk",
+        "kz": "LfArbOb2Q3c"
+      },
+      {
+        "ru": "0bpVHleIDyc",
+        "kz": "w43JXLzoUlo"
+      },
+      {
+        "ru": "5jG9R5rfjcQ",
+        "kz": "NgDXyVSO6Sk"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "7yzlIC3A0zY",
+        "kz": "ovsQJVObtT4"
+      },
+      {
+        "ru": "9VwLQpUgiSo",
+        "kz": "qPULL8WAI5g"
+      },
+      {
+        "ru": "4gk67t0YGWc",
+        "kz": "mP44u67-JXU"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/2.mp3",
+        "kz": "src/assets/audio/kz/2.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/11.mp3",
+        "kz": "src/assets/audio/kz/11.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/3.mp3",
+        "kz": "src/assets/audio/kz/3.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/6.mp3",
+        "kz": "src/assets/audio/kz/6.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/10.mp3",
+        "kz": "src/assets/audio/kz/10.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/8.mp3",
+        "kz": "src/assets/audio/kz/8.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "КОРПУС_А_-_книга_для_руководителя_2024_рус.pdf",
+          "file": "src/assets/books/corpAFirst/ru/A_corp_book_for_headmaster_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/corpAFirst/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "А_КОРПУСЫ_-_басшыға_арналған_кітап_2024_каз.pdf",
+          "file": "src/assets/books/corpAFirst/kz/A_corp_book_for_headmaster_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/corpAFirst/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 25000,
+    "duration": 20
+  },
+  {
+    "id": "product25",
+    "examID": "govForPeople",
+    "program": "first",
+    "video": [
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "Pum8JZzZGGw",
+        "kz": "0itAXKaVKko"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "dGdHq4UXNyI",
+        "kz": "OzfaUcr6uW0"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/12.mp3",
+        "kz": "src/assets/audio/kz/12.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/14.mp3",
+        "kz": "src/assets/audio/kz/14.mp3"
+      }
+    ],
+    "books": {},
+    "price": 3000,
+    "duration": 3
+  },
+  {
+    "id": "product26",
+    "examID": "govForPeople",
+    "program": "second",
+    "video": [
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "Pum8JZzZGGw",
+        "kz": "0itAXKaVKko"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "dGdHq4UXNyI",
+        "kz": "OzfaUcr6uW0"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/12.mp3",
+        "kz": "src/assets/audio/kz/12.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/14.mp3",
+        "kz": "src/assets/audio/kz/14.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_сдать_тесты_в_ЦОН_2024_рус.pdf",
+          "file": "src/assets/books/govForPeople/ru/How_to_pass_tests_to_CON_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "ХҚКО_(ЦОН)_тестті_қалай_тапсыруға_болады_2024_каз.pdf",
+          "file": "src/assets/books/govForPeople/kz/How_to_pass_tests_to_CON_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 5000,
+    "duration": 10
+  },
+  {
+    "id": "product27",
+    "examID": "govForPeople",
+    "program": "third",
+    "video": [
+      {
+        "ru": "vI2FroNo7Xg",
+        "kz": "FjGElDduX3E"
+      },
+      {
+        "ru": "Pum8JZzZGGw",
+        "kz": "0itAXKaVKko"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "dGdHq4UXNyI",
+        "kz": "OzfaUcr6uW0"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/7.mp3",
+        "kz": "src/assets/audio/kz/7.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/12.mp3",
+        "kz": "src/assets/audio/kz/12.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/14.mp3",
+        "kz": "src/assets/audio/kz/14.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_сдать_тесты_в_ЦОН_2024_рус.pdf",
+          "file": "src/assets/books/govForPeople/ru/How_to_pass_tests_to_CON_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "ХҚКО_(ЦОН)_тестті_қалай_тапсыруға_болады_2024_каз.pdf",
+          "file": "src/assets/books/govForPeople/kz/How_to_pass_tests_to_CON_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 9000,
+    "duration": 20
+  },
+  {
+    "id": "product28",
+    "examID": "administrativeCivilServicePilotProject",
+    "program": "first",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {},
+    "price": 5000,
+    "duration": 3
+  },
+  {
+    "id": "product29",
+    "examID": "administrativeCivilServicePilotProject",
+    "program": "second",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServicePilotProject/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServicePilotProject/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServicePilotProject/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServicePilotProject/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 8000,
+    "duration": 10
+  },
+  {
+    "id": "product30",
+    "examID": "administrativeCivilServicePilotProject",
+    "program": "third",
+    "video": [
+      {
+        "ru": "bvlbYmHMQlQ",
+        "kz": "fTHtnuTd6og"
+      },
+      {
+        "ru": "ddBZ9qX9iA0",
+        "kz": "ty5iaUlYlRU"
+      },
+      {
+        "ru": "ECdzZLXtMzU",
+        "kz": "AYPAHtG0_HQ"
+      },
+      {
+        "ru": "dh7zXHn6TEI",
+        "kz": "pvv3SVGbEQE"
+      }
+    ],
+    "audio": [
+      {
+        "ru": "src/assets/audio/ru/1.mp3",
+        "kz": "src/assets/audio/kz/1.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/4.mp3",
+        "kz": "src/assets/audio/kz/4.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/5.mp3",
+        "kz": "src/assets/audio/kz/5.mp3"
+      },
+      {
+        "ru": "src/assets/audio/ru/9.mp3",
+        "kz": "src/assets/audio/kz/9.mp3"
+      }
+    ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_легко_сдать_тесты_на_госслужбу_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServicePilotProject/ru/How_easy_to_pass_civil_service_tests_2024_ru.pdf"
+        },
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/administrativeCivilServicePilotProject/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServicePilotProject/kz/How_easy_to_pass_civil_service_tests_2024_kz.pdf"
+        },
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/administrativeCivilServicePilotProject/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 12000,
+    "duration": 20
+  },
+  {
+    "id": "product31",
+    "examID": "notariat",
+    "program": "first",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/notariat/ru/1.pdf"
+        },
+        {
+          "name": "2_Гражданский_кодекс_Республики_Казахстан_(Особенная часть).pdf",
+          "file": "src/assets/books/notariat/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/notariat/ru/3.pdf"
+        },
+        {
+          "name": "4_О_государственной_регистрации_прав_на_недвижимое_имущество.pdf",
+          "file": "src/assets/books/notariat/ru/4.pdf"
+        },
+        {
+          "name": "5_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/notariat/ru/5.pdf"
+        },
+        {
+          "name": "6_О_нотариате.pdf",
+          "file": "src/assets/books/notariat/ru/6.pdf"
+        },
+        {
+          "name": "7_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/notariat/ru/7.pdf"
+        },
+        {
+          "name": "8_Земельный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/notariat/ru/8.pdf"
+        },
+        {
+          "name": "9_О_жилищных_отношениях.pdf",
+          "file": "src/assets/books/notariat/ru/9.pdf"
+        },
+        {
+          "name": "10_О_противодействии_легализации_(отмыванию)_доходов.pdf",
+          "file": "src/assets/books/notariat/ru/10.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/notariat/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше бөлім).pdf",
+          "file": "src/assets/books/notariat/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/3.pdf"
+        },
+        {
+          "name": "4_Жылжымайтын_мүлікке_құқықтарды_мемлекеттік_тіркеу_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/4.pdf"
+        },
+        {
+          "name": "5_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/5.pdf"
+        },
+        {
+          "name": "6_Нотариат_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/6.pdf"
+        },
+        {
+          "name": "7_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/notariat/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_Жер_кодексі.pdf",
+          "file": "src/assets/books/notariat/kz/8.pdf"
+        },
+        {
+          "name": "9_Тұрғын_үй_қатынастары_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/9.pdf"
+        },
+        {
+          "name": "10_Қылмыстық_жолмен_алынған_кірістерді_заңдастыруға_(жылыстатуға)_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/10.pdf"
+        }
+      ]
+    },
+    "price": 20000,
+    "duration": 15
+  },
+  {
+    "id": "product32",
+    "examID": "notariat",
+    "program": "second",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/notariat/ru/1.pdf"
+        },
+        {
+          "name": "2_Гражданский_кодекс_Республики_Казахстан_(Особенная часть).pdf",
+          "file": "src/assets/books/notariat/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/notariat/ru/3.pdf"
+        },
+        {
+          "name": "4_О_государственной_регистрации_прав_на_недвижимое_имущество.pdf",
+          "file": "src/assets/books/notariat/ru/4.pdf"
+        },
+        {
+          "name": "5_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/notariat/ru/5.pdf"
+        },
+        {
+          "name": "6_О_нотариате.pdf",
+          "file": "src/assets/books/notariat/ru/6.pdf"
+        },
+        {
+          "name": "7_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/notariat/ru/7.pdf"
+        },
+        {
+          "name": "8_Земельный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/notariat/ru/8.pdf"
+        },
+        {
+          "name": "9_О_жилищных_отношениях.pdf",
+          "file": "src/assets/books/notariat/ru/9.pdf"
+        },
+        {
+          "name": "10_О_противодействии_легализации_(отмыванию)_доходов.pdf",
+          "file": "src/assets/books/notariat/ru/10.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/notariat/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше бөлім).pdf",
+          "file": "src/assets/books/notariat/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/3.pdf"
+        },
+        {
+          "name": "4_Жылжымайтын_мүлікке_құқықтарды_мемлекеттік_тіркеу_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/4.pdf"
+        },
+        {
+          "name": "5_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/5.pdf"
+        },
+        {
+          "name": "6_Нотариат_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/6.pdf"
+        },
+        {
+          "name": "7_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/notariat/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_Жер_кодексі.pdf",
+          "file": "src/assets/books/notariat/kz/8.pdf"
+        },
+        {
+          "name": "9_Тұрғын_үй_қатынастары_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/9.pdf"
+        },
+        {
+          "name": "10_Қылмыстық_жолмен_алынған_кірістерді_заңдастыруға_(жылыстатуға)_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/10.pdf"
+        }
+      ]
+    },
+    "price": 25000,
+    "duration": 30
+  },
+  {
+    "id": "product33",
+    "examID": "notariat",
+    "program": "third",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/notariat/ru/1.pdf"
+        },
+        {
+          "name": "2_Гражданский_кодекс_Республики_Казахстан_(Особенная часть).pdf",
+          "file": "src/assets/books/notariat/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/notariat/ru/3.pdf"
+        },
+        {
+          "name": "4_О_государственной_регистрации_прав_на_недвижимое_имущество.pdf",
+          "file": "src/assets/books/notariat/ru/4.pdf"
+        },
+        {
+          "name": "5_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/notariat/ru/5.pdf"
+        },
+        {
+          "name": "6_О_нотариате.pdf",
+          "file": "src/assets/books/notariat/ru/6.pdf"
+        },
+        {
+          "name": "7_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/notariat/ru/7.pdf"
+        },
+        {
+          "name": "8_Земельный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/notariat/ru/8.pdf"
+        },
+        {
+          "name": "9_О_жилищных_отношениях.pdf",
+          "file": "src/assets/books/notariat/ru/9.pdf"
+        },
+        {
+          "name": "10_О_противодействии_легализации_(отмыванию)_доходов.pdf",
+          "file": "src/assets/books/notariat/ru/10.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/notariat/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше бөлім).pdf",
+          "file": "src/assets/books/notariat/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/3.pdf"
+        },
+        {
+          "name": "4_Жылжымайтын_мүлікке_құқықтарды_мемлекеттік_тіркеу_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/4.pdf"
+        },
+        {
+          "name": "5_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/5.pdf"
+        },
+        {
+          "name": "6_Нотариат_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/6.pdf"
+        },
+        {
+          "name": "7_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/notariat/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_Жер_кодексі.pdf",
+          "file": "src/assets/books/notariat/kz/8.pdf"
+        },
+        {
+          "name": "9_Тұрғын_үй_қатынастары_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/9.pdf"
+        },
+        {
+          "name": "10_Қылмыстық_жолмен_алынған_кірістерді_заңдастыруға_(жылыстатуға)_туралы.pdf",
+          "file": "src/assets/books/notariat/kz/10.pdf"
+        }
+      ]
+    },
+    "price": 30000,
+    "duration": 60
+  },
+  {
+    "id": "product34",
+    "examID": "advocacy",
+    "program": "first",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/1.pdf"
+        },
+        {
+          "name": "2_Уголовно_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/2.pdf"
+        },
+        {
+          "name": "3_Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/advocacy/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_адвокатской_деятельности_и_юридической_помощи.pdf",
+          "file": "src/assets/books/advocacy/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/5.pdf"
+        },
+        {
+          "name": "6_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/advocacy/ru/6.pdf"
+        },
+        {
+          "name": "7_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/7.pdf"
+        },
+        {
+          "name": "8_Гражданский_кодекс_Республики_Казахстан_(Особенная_часть).pdf",
+          "file": "src/assets/books/advocacy/ru/8.pdf"
+        },
+        {
+          "name": "9_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/advocacy/ru/9.pdf"
+        },
+        {
+          "name": "10_О_противодействии_легализации_(отмыванию)_доходов.pdf",
+          "file": "src/assets/books/advocacy/ru/10.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Қазақстан_Республикасының_Қылмыстық_кодексi.pdf",
+          "file": "src/assets/books/advocacy/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_Қылмыстық_процестік_кодексi.pdf",
+          "file": "src/assets/books/advocacy/kz/2.pdf"
+        },
+        {
+          "name": "3_Әкімшілік_құқық_бұзушылық_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/3.pdf"
+        },
+        {
+          "name": "4_Адвокаттық_қызмет_және_заң_көмегі_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/advocacy/kz/5.pdf"
+        },
+        {
+          "name": "6_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/6.pdf"
+        },
+        {
+          "name": "7_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/advocacy/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше_бөлім).pdf",
+          "file": "src/assets/books/advocacy/kz/8.pdf"
+        },
+        {
+          "name": "9_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/advocacy/kz/9.pdf"
+        },
+        {
+          "name": "10_Қылмыстық_жолмен_алынған_кірістерді_заңдастыруға_(жылыстатуға)_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/10.pdf"
+        }
+      ]
+    },
+    "price": 20000,
+    "duration": 15
+  },
+  {
+    "id": "product35",
+    "examID": "advocacy",
+    "program": "second",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/1.pdf"
+        },
+        {
+          "name": "2_Уголовно_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/2.pdf"
+        },
+        {
+          "name": "3_Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/advocacy/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_адвокатской_деятельности_и_юридической_помощи.pdf",
+          "file": "src/assets/books/advocacy/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/5.pdf"
+        },
+        {
+          "name": "6_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/advocacy/ru/6.pdf"
+        },
+        {
+          "name": "7_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/7.pdf"
+        },
+        {
+          "name": "8_Гражданский_кодекс_Республики_Казахстан_(Особенная_часть).pdf",
+          "file": "src/assets/books/advocacy/ru/8.pdf"
+        },
+        {
+          "name": "9_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/advocacy/ru/9.pdf"
+        },
+        {
+          "name": "10_О_противодействии_легализации_(отмыванию)_доходов.pdf",
+          "file": "src/assets/books/advocacy/ru/10.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Қазақстан_Республикасының_Қылмыстық_кодексi.pdf",
+          "file": "src/assets/books/advocacy/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_Қылмыстық_процестік_кодексi.pdf",
+          "file": "src/assets/books/advocacy/kz/2.pdf"
+        },
+        {
+          "name": "3_Әкімшілік_құқық_бұзушылық_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/3.pdf"
+        },
+        {
+          "name": "4_Адвокаттық_қызмет_және_заң_көмегі_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/advocacy/kz/5.pdf"
+        },
+        {
+          "name": "6_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/6.pdf"
+        },
+        {
+          "name": "7_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/advocacy/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше_бөлім).pdf",
+          "file": "src/assets/books/advocacy/kz/8.pdf"
+        },
+        {
+          "name": "9_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/advocacy/kz/9.pdf"
+        },
+        {
+          "name": "10_Қылмыстық_жолмен_алынған_кірістерді_заңдастыруға_(жылыстатуға)_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/10.pdf"
+        }
+      ]
+    },
+    "price": 25000,
+    "duration": 30
+  },
+  {
+    "id": "product36",
+    "examID": "advocacy",
+    "program": "third",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/1.pdf"
+        },
+        {
+          "name": "2_Уголовно_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/2.pdf"
+        },
+        {
+          "name": "3_Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/advocacy/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_адвокатской_деятельности_и_юридической_помощи.pdf",
+          "file": "src/assets/books/advocacy/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/5.pdf"
+        },
+        {
+          "name": "6_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/advocacy/ru/6.pdf"
+        },
+        {
+          "name": "7_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/advocacy/ru/7.pdf"
+        },
+        {
+          "name": "8_Гражданский_кодекс_Республики_Казахстан_(Особенная_часть).pdf",
+          "file": "src/assets/books/advocacy/ru/8.pdf"
+        },
+        {
+          "name": "9_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/advocacy/ru/9.pdf"
+        },
+        {
+          "name": "10_О_противодействии_легализации_(отмыванию)_доходов.pdf",
+          "file": "src/assets/books/advocacy/ru/10.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Қазақстан_Республикасының_Қылмыстық_кодексi.pdf",
+          "file": "src/assets/books/advocacy/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_Қылмыстық_процестік_кодексi.pdf",
+          "file": "src/assets/books/advocacy/kz/2.pdf"
+        },
+        {
+          "name": "3_Әкімшілік_құқық_бұзушылық_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/3.pdf"
+        },
+        {
+          "name": "4_Адвокаттық_қызмет_және_заң_көмегі_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/advocacy/kz/5.pdf"
+        },
+        {
+          "name": "6_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/6.pdf"
+        },
+        {
+          "name": "7_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/advocacy/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше_бөлім).pdf",
+          "file": "src/assets/books/advocacy/kz/8.pdf"
+        },
+        {
+          "name": "9_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/advocacy/kz/9.pdf"
+        },
+        {
+          "name": "10_Қылмыстық_жолмен_алынған_кірістерді_заңдастыруға_(жылыстатуға)_туралы.pdf",
+          "file": "src/assets/books/advocacy/kz/10.pdf"
+        }
+      ]
+    },
+    "price": 30000,
+    "duration": 60
+  },
+  {
+    "id": "product37",
+    "examID": "privateBailiffExam",
+    "program": "first",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Об_исполнительном_производстве_и_статусе_судебных_исполнителей.pdf",
+          "file": "src/assets/books/privateBailiff/ru/1.pdf"
+        },
+        {
+          "name": "2_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/2.pdf"
+        },
+        {
+          "name": "3_Уголовно_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/3.pdf"
+        },
+        {
+          "name": "4 Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/privateBailiff/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/5.pdf"
+        },
+        {
+          "name": "6_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/privateBailiff/ru/6.pdf"
+        },
+        {
+          "name": "7_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/7.pdf"
+        },
+        {
+          "name": "8_Гражданский_кодекс_Республики_Казахстан_(Особенная часть).pdf",
+          "file": "src/assets/books/privateBailiff/ru/8.pdf"
+        },
+        {
+          "name": "9_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/privateBailiff/ru/9.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Атқарушылық_iс_жүргiзу_және_сот_орындаушыларының_мәртебесi_туралы.pdf",
+          "file": "src/assets/books/privateBailiff/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_Қылмыстық кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/2.pdf"
+        },
+        {
+          "name": "3_Қазақстан_Республикасының_Қылмыстық-процестік_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/3.pdf"
+        },
+        {
+          "name": "4_Әкімшілік_құқық_бұзушылық_туралы_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/privateBailiff/kz/5.pdf"
+        },
+        {
+          "name": "6_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/privateBailiff/kz/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасының_азаматтық_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше бөлім).pdf",
+          "file": "src/assets/books/privateBailiff/kz/8.pdf"
+        },
+        {
+          "name": "9_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/privateBailiff/kz/9.pdf"
+        }
+
+      ]
+    },
+    "price": 15000,
+    "duration": 15
+  },
+  {
+    "id": "product38",
+    "examID": "privateBailiffExam",
+    "program": "second",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Об_исполнительном_производстве_и_статусе_судебных_исполнителей.pdf",
+          "file": "src/assets/books/privateBailiff/ru/1.pdf"
+        },
+        {
+          "name": "2_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/2.pdf"
+        },
+        {
+          "name": "3_Уголовно_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/3.pdf"
+        },
+        {
+          "name": "4 Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/privateBailiff/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/5.pdf"
+        },
+        {
+          "name": "6_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/privateBailiff/ru/6.pdf"
+        },
+        {
+          "name": "7_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/7.pdf"
+        },
+        {
+          "name": "8_Гражданский_кодекс_Республики_Казахстан_(Особенная часть).pdf",
+          "file": "src/assets/books/privateBailiff/ru/8.pdf"
+        },
+        {
+          "name": "9_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/privateBailiff/ru/9.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Атқарушылық_iс_жүргiзу_және_сот_орындаушыларының_мәртебесi_туралы.pdf",
+          "file": "src/assets/books/privateBailiff/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_Қылмыстық кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/2.pdf"
+        },
+        {
+          "name": "3_Қазақстан_Республикасының_Қылмыстық-процестік_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/3.pdf"
+        },
+        {
+          "name": "4_Әкімшілік_құқық_бұзушылық_туралы_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/privateBailiff/kz/5.pdf"
+        },
+        {
+          "name": "6_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/privateBailiff/kz/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасының_азаматтық_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше бөлім).pdf",
+          "file": "src/assets/books/privateBailiff/kz/8.pdf"
+        },
+        {
+          "name": "9_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/privateBailiff/kz/9.pdf"
+        }
+
+      ]
+    },
+    "price": 20000,
+    "duration": 30
+  },
+  {
+    "id": "product39",
+    "examID": "privateBailiffExam",
+    "program": "third",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Об_исполнительном_производстве_и_статусе_судебных_исполнителей.pdf",
+          "file": "src/assets/books/privateBailiff/ru/1.pdf"
+        },
+        {
+          "name": "2_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/2.pdf"
+        },
+        {
+          "name": "3_Уголовно_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/3.pdf"
+        },
+        {
+          "name": "4 Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/privateBailiff/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/5.pdf"
+        },
+        {
+          "name": "6_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/privateBailiff/ru/6.pdf"
+        },
+        {
+          "name": "7_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/privateBailiff/ru/7.pdf"
+        },
+        {
+          "name": "8_Гражданский_кодекс_Республики_Казахстан_(Особенная часть).pdf",
+          "file": "src/assets/books/privateBailiff/ru/8.pdf"
+        },
+        {
+          "name": "9_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/privateBailiff/ru/9.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Атқарушылық_iс_жүргiзу_және_сот_орындаушыларының_мәртебесi_туралы.pdf",
+          "file": "src/assets/books/privateBailiff/kz/1.pdf"
+        },
+        {
+          "name": "2_Қазақстан_Республикасының_Қылмыстық кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/2.pdf"
+        },
+        {
+          "name": "3_Қазақстан_Республикасының_Қылмыстық-процестік_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/3.pdf"
+        },
+        {
+          "name": "4_Әкімшілік_құқық_бұзушылық_туралы_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/privateBailiff/kz/5.pdf"
+        },
+        {
+          "name": "6_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/privateBailiff/kz/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасының_азаматтық_кодексi.pdf",
+          "file": "src/assets/books/privateBailiff/kz/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше бөлім).pdf",
+          "file": "src/assets/books/privateBailiff/kz/8.pdf"
+        },
+        {
+          "name": "9_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/privateBailiff/kz/9.pdf"
+        }
+
+      ]
+    },
+    "price": 30000,
+    "duration": 60
+  },
+  {
+    "id": "product40",
+    "examID": "headOfEducationalOrganizationFirst",
+    "program": "first",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_О_статусе_педагога.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_образовании.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_утверждении_государственных_общеобязательных_стандартов.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/4.pdf"
+        },
+        {
+          "name": "5_Об_утверждении_Типовых_правил_деятельности_организаций.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/5.pdf"
+        },
+        {
+          "name": "6_Трудовой_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/6.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Педагог_мәртебесі_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/1.pdf"
+        },
+        {
+          "name": "2_Білім_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/3.pdf"
+        },
+        {
+          "name": "4_Мемлекеттік_жалпыға_міндетті_стандарттарын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/4.pdf"
+        },
+        {
+          "name": "5_Білім_беру_ұйымдарынының_үлгілік_қағидаларын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Еңбек_Кодексі.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/6.pdf"
+        }
+      ]
+    },
+    "price": 10000,
+    "duration": 15
+  },
+  {
+    "id": "product41",
+    "examID": "headOfEducationalOrganizationFirst",
+    "program": "second",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_О_статусе_педагога.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_образовании.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_утверждении_государственных_общеобязательных_стандартов.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/4.pdf"
+        },
+        {
+          "name": "5_Об_утверждении_Типовых_правил_деятельности_организаций.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/5.pdf"
+        },
+        {
+          "name": "6_Трудовой_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/6.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Педагог_мәртебесі_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/1.pdf"
+        },
+        {
+          "name": "2_Білім_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/3.pdf"
+        },
+        {
+          "name": "4_Мемлекеттік_жалпыға_міндетті_стандарттарын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/4.pdf"
+        },
+        {
+          "name": "5_Білім_беру_ұйымдарынының_үлгілік_қағидаларын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Еңбек_Кодексі.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/6.pdf"
+        }
+      ]
+    },
+    "price": 15000,
+    "duration": 30
+  },
+  {
+    "id": "product42",
+    "examID": "headOfEducationalOrganizationFirst",
+    "program": "third",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_О_статусе_педагога.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_образовании.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_утверждении_государственных_общеобязательных_стандартов.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/4.pdf"
+        },
+        {
+          "name": "5_Об_утверждении_Типовых_правил_деятельности_организаций.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/5.pdf"
+        },
+        {
+          "name": "6_Трудовой_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/ru/6.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Педагог_мәртебесі_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/1.pdf"
+        },
+        {
+          "name": "2_Білім_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/3.pdf"
+        },
+        {
+          "name": "4_Мемлекеттік_жалпыға_міндетті_стандарттарын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/4.pdf"
+        },
+        {
+          "name": "5_Білім_беру_ұйымдарынының_үлгілік_қағидаларын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Еңбек_Кодексі.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationFirst/kz/6.pdf"
+        }
+      ]
+    },
+    "price": 20000,
+    "duration": 60
+  },
+  {
+    "id": "product43",
+    "examID": "judicialCorp",
+    "program": "first",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Конституция_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/judicialCorp/ru/2.pdf"
+        },
+        {
+          "name": "3_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/judicialCorp/ru/3.pdf"
+        },
+        {
+          "name": "4_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский_кодекс_Республики_Казахстан_(Особенная_часть).pdf",
+          "file": "src/assets/books/judicialCorp/ru/5.pdf"
+        },
+        {
+          "name": "6_Гражданский_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/6.pdf"
+        },
+        {
+          "name": "7_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/7.pdf"
+        },
+        {
+          "name": "8_Уголовно-процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/8.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1 Қазақстан Республикасының Конституциясы.pdf",
+          "file": "src/assets/books/judicialCorp/kz/1.pdf"
+        },
+        {
+          "name": "2_Әкімшілік_құқық_бұзушылық_туралы.pdf",
+          "file": "src/assets/books/judicialCorp/kz/2.pdf"
+        },
+        {
+          "name": "3_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/judicialCorp/kz/3.pdf"
+        },
+        {
+          "name": "4_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/judicialCorp/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше_бөлім).pdf",
+          "file": "src/assets/books/judicialCorp/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/judicialCorp/ru/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасының_Қылмыстық_кодексi.pdf",
+          "file": "src/assets/books/judicialCorp/ru/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_Қылмыстық-процестік_кодексi.pdf",
+          "file": "src/assets/books/judicialCorp/ru/8.pdf"
+        }
+      ]
+    },
+    "price": 20000,
+    "duration": 15
+  },
+  {
+    "id": "product44",
+    "examID": "judicialCorp",
+    "program": "second",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Конституция_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/judicialCorp/ru/2.pdf"
+        },
+        {
+          "name": "3_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/judicialCorp/ru/3.pdf"
+        },
+        {
+          "name": "4_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский_кодекс_Республики_Казахстан_(Особенная_часть).pdf",
+          "file": "src/assets/books/judicialCorp/ru/5.pdf"
+        },
+        {
+          "name": "6_Гражданский_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/6.pdf"
+        },
+        {
+          "name": "7_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/7.pdf"
+        },
+        {
+          "name": "8_Уголовно-процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/8.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1 Қазақстан Республикасының Конституциясы.pdf",
+          "file": "src/assets/books/judicialCorp/kz/1.pdf"
+        },
+        {
+          "name": "2_Әкімшілік_құқық_бұзушылық_туралы.pdf",
+          "file": "src/assets/books/judicialCorp/kz/2.pdf"
+        },
+        {
+          "name": "3_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/judicialCorp/kz/3.pdf"
+        },
+        {
+          "name": "4_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/judicialCorp/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше_бөлім).pdf",
+          "file": "src/assets/books/judicialCorp/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/judicialCorp/ru/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасының_Қылмыстық_кодексi.pdf",
+          "file": "src/assets/books/judicialCorp/ru/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_Қылмыстық-процестік_кодексi.pdf",
+          "file": "src/assets/books/judicialCorp/ru/8.pdf"
+        }
+      ]
+    },
+    "price": 25000,
+    "duration": 30
+  },
+  {
+    "id": "product45",
+    "examID": "judicialCorp",
+    "program": "third",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_Конституция_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_административных_правонарушениях.pdf",
+          "file": "src/assets/books/judicialCorp/ru/2.pdf"
+        },
+        {
+          "name": "3_АДМИНИСТРАТИВНЫЙ_ПРОЦЕДУРНО-ПРОЦЕССУАЛЬНЫЙ_КОДЕКС_РЕСПУБЛИКИ_КАЗАХСТАН.pdf",
+          "file": "src/assets/books/judicialCorp/ru/3.pdf"
+        },
+        {
+          "name": "4_Гражданский_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/4.pdf"
+        },
+        {
+          "name": "5_Гражданский_кодекс_Республики_Казахстан_(Особенная_часть).pdf",
+          "file": "src/assets/books/judicialCorp/ru/5.pdf"
+        },
+        {
+          "name": "6_Гражданский_процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/6.pdf"
+        },
+        {
+          "name": "7_Уголовный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/7.pdf"
+        },
+        {
+          "name": "8_Уголовно-процессуальный_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/judicialCorp/ru/8.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1 Қазақстан Республикасының Конституциясы.pdf",
+          "file": "src/assets/books/judicialCorp/kz/1.pdf"
+        },
+        {
+          "name": "2_Әкімшілік_құқық_бұзушылық_туралы.pdf",
+          "file": "src/assets/books/judicialCorp/kz/2.pdf"
+        },
+        {
+          "name": "3_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_ӘКІМШІЛІК_РӘСІМДІК-ПРОЦЕСТІК_КОДЕКСІ.pdf",
+          "file": "src/assets/books/judicialCorp/kz/3.pdf"
+        },
+        {
+          "name": "4_ҚАЗАҚСТАН_РЕСПУБЛИКАСЫНЫҢ_АЗАМАТТЫҚ_КОДЕКСI.pdf",
+          "file": "src/assets/books/judicialCorp/kz/4.pdf"
+        },
+        {
+          "name": "5_Қазақстан_Республикасының_азаматтық_кодексі_(ерекше_бөлім).pdf",
+          "file": "src/assets/books/judicialCorp/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Азаматтық_процестік_кодексі.pdf",
+          "file": "src/assets/books/judicialCorp/ru/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасының_Қылмыстық_кодексi.pdf",
+          "file": "src/assets/books/judicialCorp/ru/7.pdf"
+        },
+        {
+          "name": "8_Қазақстан_Республикасының_Қылмыстық-процестік_кодексi.pdf",
+          "file": "src/assets/books/judicialCorp/ru/8.pdf"
+        }
+      ]
+    },
+    "price": 30000,
+    "duration": 60
+  },
+  {
+    "id": "product46",
+    "examID": "BOOK",
+    "books": {
+      "ru": [
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2024_рус.pdf",
+          "file": "src/assets/books/OLK/ru/How_to_pass_OLK_test_2024_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2024_каз.pdf",
+          "file": "src/assets/books/OLK/kz/How_to_pass_OLK_test_2024_kz.pdf"
+        }
+      ]
+    },
+    "price": 3000,
+    "duration": 20
+  },
+  {
+    "id": "product47",
+    "examID": "headOfEducationalOrganizationSecond",
+    "program": "first",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_О_статусе_педагога.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_образовании.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_утверждении_государственных_общеобязательных_стандартов.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/4.pdf"
+        },
+        {
+          "name": "5_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/5.pdf"
+        },
+        {
+          "name": "6_Трудовой_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/6.pdf"
+        },
+        {
+          "name": "7_О_правах_ребенка_в_Республике_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/7.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Педагог_мәртебесі_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/1.pdf"
+        },
+        {
+          "name": "2_Білім_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/3.pdf"
+        },
+        {
+          "name": "4_Мемлекеттік_жалпыға_міндетті_стандарттарын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/4.pdf"
+        },
+        {
+          "name": "5_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Еңбек_Кодексі.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасындағы_баланың_құқықтары_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/7.pdf"
+        }
+      ]
+    },
+    "price": 10000,
+    "duration": 15
+  },
+  {
+    "id": "product48",
+    "examID": "headOfEducationalOrganizationSecond",
+    "program": "second",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_О_статусе_педагога.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_образовании.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_утверждении_государственных_общеобязательных_стандартов.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/4.pdf"
+        },
+        {
+          "name": "5_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/5.pdf"
+        },
+        {
+          "name": "6_Трудовой_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/6.pdf"
+        },
+        {
+          "name": "7_О_правах_ребенка_в_Республике_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/7.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Педагог_мәртебесі_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/1.pdf"
+        },
+        {
+          "name": "2_Білім_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/3.pdf"
+        },
+        {
+          "name": "4_Мемлекеттік_жалпыға_міндетті_стандарттарын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/4.pdf"
+        },
+        {
+          "name": "5_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Еңбек_Кодексі.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасындағы_баланың_құқықтары_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/7.pdf"
+        }
+      ]
+    },
+    "price": 15000,
+    "duration": 30
+  },
+  {
+    "id": "product49",
+    "examID": "headOfEducationalOrganizationSecond",
+    "program": "third",
+    "video": [],
+    "audio": [],
+    "laws": {
+      "ru": [
+        {
+          "name": "1_О_статусе_педагога.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/1.pdf"
+        },
+        {
+          "name": "2_Об_образовании.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/2.pdf"
+        },
+        {
+          "name": "3_О_противодействии_коррупции.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/3.pdf"
+        },
+        {
+          "name": "4_Об_утверждении_государственных_общеобязательных_стандартов.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/4.pdf"
+        },
+        {
+          "name": "5_О_браке_(супружестве)_и_семье.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/5.pdf"
+        },
+        {
+          "name": "6_Трудовой_кодекс_Республики_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/6.pdf"
+        },
+        {
+          "name": "7_О_правах_ребенка_в_Республике_Казахстан.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/ru/7.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "1_Педагог_мәртебесі_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/1.pdf"
+        },
+        {
+          "name": "2_Білім_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/2.pdf"
+        },
+        {
+          "name": "3_Сыбайлас_жемқорлыққа_қарсы_іс-қимыл_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/3.pdf"
+        },
+        {
+          "name": "4_Мемлекеттік_жалпыға_міндетті_стандарттарын_бекіту_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/4.pdf"
+        },
+        {
+          "name": "5_Неке_(ерлі-зайыптылық)_және_отбасы_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/5.pdf"
+        },
+        {
+          "name": "6_Қазақстан_Республикасының_Еңбек_Кодексі.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/6.pdf"
+        },
+        {
+          "name": "7_Қазақстан_Республикасындағы_баланың_құқықтары_туралы.pdf",
+          "file": "src/assets/books/headOfEducationalOrganizationSecond/kz/7.pdf"
+        }
+      ]
+    },
+    "price": 20000,
+    "duration": 60
+  },
+  {
+    "id": "product50",
+    "examID": "presidentialYouthPersonnelReserve",
+    "program": "first",
+    "items": [
+      "CHECKOUT.ITEMS.TEXT_TEST",
+      "CHECKOUT.ITEMS.NUMBER_TEST",
+      "CHECKOUT.ITEMS.KAZTEST",
+      "CHECKOUT.WORK",
+      "CHECKOUT.LAWS"
+    ],
+    "price": 10000,
+    "duration": 10
+  },
+  {
+    "id": "product51",
+    "examID": "presidentialYouthPersonnelReserve",
+    "program": "second",
+    "items": [
+      "CHECKOUT.ITEMS.TEXT_TEST",
+      "CHECKOUT.ITEMS.NUMBER_TEST",
+      "CHECKOUT.ITEMS.KAZTEST",
+      "CHECKOUT.WORK",
+      "CHECKOUT.LAWS"
+    ],
+    "price": 15000,
+    "duration": 20
+  },
+  {
+    "id": "product52",
+    "examID": "presidentialYouthPersonnelReserve",
+    "program": "third",
+    "items": [
+      "CHECKOUT.ITEMS.TEXT_TEST",
+      "CHECKOUT.ITEMS.NUMBER_TEST",
+      "CHECKOUT.ITEMS.KAZTEST",
+      "CHECKOUT.WORK",
+      "CHECKOUT.LAWS"
+    ],
+    "price": 25000,
+    "duration": 30
+  }
+]

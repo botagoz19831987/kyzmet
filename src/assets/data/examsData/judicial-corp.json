@@ -1,0 +1,66 @@
+{
+  "id": "judicialCorp",
+  "title": "Судебный корпус",
+  "title-kz": "Сот корпусы",
+  "topics": [
+    {
+      "id": "constitutionForJudicialCorp",
+      "title": "Конституция РК",
+      "title-kz": "Қазақстан Республикасының Конституциясы",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "adminOffensesForJudicialCorp",
+      "title": "Кодекс об административных правонарушениях",
+      "title-kz": "Әкімшілік құқық бұзушылық туралы кодексi",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "adminProceduresForJudicialCorp",
+      "title": "Административный процедурно-процессуальный кодекс",
+      "title-kz": "Қазақстан Республикасының әкімшілік рәсімдік-процестік кодексі",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "civilCodeForJudicialCorp",
+      "title": "Гражданский кодекс РК",
+      "title-kz": "Қазақстан Республикасының азаматтық кодексi",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "civilProcedureCodeForJudicialCorp",
+      "title": "Гражданский процессуальный кодекс Республики Казахстан",
+      "title-kz": "Қазақстан Республикасының Азаматтық процестік кодексі",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "criminalCodeForJudicialCorp",
+      "title": "Уголовный кодекс РК",
+      "title-kz": "Қазақстан Республикасының Қылмыстық кодексi",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "criminalProcedureForJudicialCorp",
+      "title": "Уголовный кодекс РК",
+      "title-kz": "Қазақстан Республикасының Қылмыстық-процестік кодексi",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    }
+  ],
+  "time": 90,
+  "questionsTotal": 100,
+  "passingScore": 75
+}

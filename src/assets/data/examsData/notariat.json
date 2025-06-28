@@ -1,0 +1,82 @@
+{
+  "id": "notariat",
+  "title": "Нотариат",
+  "title-kz": "Нотариат",
+  "topics": [
+    {
+      "id": "civilCodeForNotariat",
+      "title": "Гражданский кодекс РК",
+      "title-kz": "Қазақстан Республикасының азаматтық кодексi",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "landCode",
+      "title": "Земельный кодекс РК",
+      "title-kz": "Қазақстан Республикасының Жер кодексі",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "familyCode",
+      "title": "Кодекс «О браке (супружестве) и семье»",
+      "title-kz": "Неке (ерлі-зайыптылық) және отбасы туралы",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "adminProceduresForNotariat",
+      "title": "Административный процедурно-процессуальный кодекс РК",
+      "title-kz": "Қазақстан Республикасының әкімшілік рәсімдік-процестік кодексі",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "antiCorruptionForNotariat",
+      "title": "Закон «O противодействии коррупции»",
+      "title-kz": "Сыбайлас жемқорлыққа қарсы іс-қимыл туралы",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "lawRegistrationOfRealEstate",
+      "title": "Закон «О государственной регистрации прав на недвижимое имущество»",
+      "title-kz": "Жылжымайтын мүлікке құқықтарды мемлекеттік тіркеу туралы",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "lawOfHousingRelations",
+      "title": "Закон «О жилищных отношениях»",
+      "title-kz": "Тұрғын үй қатынастары туралы",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "lawOfNotariat",
+      "title": "Закон «О нотариате»",
+      "title-kz": "Нотариат туралы",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "notariatCombatingMoney",
+      "title": "Закон «О противодействии легализации (отмыванию) доходов, полученных преступным путем, и финансированию терроризма»",
+      "title-kz": "«Қылмыстық жолмен алынған кірістерді заңдастыруға (жылыстатуға) және терроризмді қаржыландыруға қарсы іс-қимыл туралы» Заң",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    }
+  ],
+  "time": 90,
+  "questionsTotal": 100,
+  "passingScore": 70
+}

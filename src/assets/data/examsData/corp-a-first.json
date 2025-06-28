@@ -1,0 +1,90 @@
+{
+  "id": "corpAFirst",
+  "title": "Корпус А (программа 1)",
+  "title-kz": "А корпусы (1-бағдарлама)",
+  "topics": [
+    {
+      "id": "constitution",
+      "title": "Конституция РК",
+      "title-kz": "Қазақстан Республикасының Конституциясы",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "president",
+      "title": "Закон «O Президенте РК»",
+      "title-kz": "«Қазақстан Республикасының Президенті туралы» Заң",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "government",
+      "title": "Закон «O Правительстве РК»",
+      "title-kz": "«Қазақстан Республикасының Үкіметі туралы» Заң",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "civilService",
+      "title": "Закон «O государственной службе РК»",
+      "title-kz": "«Қазақстан Республикасының мемлекеттік қызметі туралы» Заң",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "antiCorruption",
+      "title": "Закон «O противодействии коррупции»",
+      "title-kz": "«Сыбайлас жемқорлыққа қарсы күрес туралы» Заң",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "legalAct",
+      "title": "Закон «O правовых актах»",
+      "title-kz": "«Құқықтық актілер туралы» Заң",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "selfService",
+      "title": "Закон «O местном государственном управлении и самоуправлении в РК»",
+      "title-kz": "«Қазақстан Республикасындағы жергілікті мемлекеттік басқару және өзін-өзі басқару туралы» Заңы",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "parliament-code",
+      "title": "Закон «O Парламенте РК и статусе его депутатов»",
+      "title-kz": "«Қазақстан Республикасының Парламенті және оның депутаттарының мәртебесі туралы» Заң",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "adminProcedures",
+      "title": "Административный процедурно-процессуальный кодекс РК",
+      "title-kz": "Қазақстан Республикасының Әкімшілік іс жүргізу кодексі",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    },
+    {
+      "id": "ethicalCode",
+      "title": "Этический кодекс государственных служащих РК (правила служебной этики госслужащих)",
+      "title-kz": "Қазақстан Республикасы мемлекеттік қызметшілерінің әдеп кодексі (Мемлекеттік қызметшілердің қызметтік этика қағидалары)",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 7
+    }
+  ],
+  "time": 90,
+  "questionsTotal": 100,
+  "passingScore": 70
+}

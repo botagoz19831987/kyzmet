@@ -1,0 +1,82 @@
+{
+  "id": "administrativeCivilServiceFirst",
+  "title": "Административная госслужба (программа 1)",
+  "title-kz": "Әкімшілік мемлекеттік қызмет (1-бағдарлама)",
+  "topics": [
+    {
+      "id": "constitution",
+      "title": "Конституция РК",
+      "title-kz": "Қазақстан Республикасының Конституциясы",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "president",
+      "title": "Закон «O Президенте РК»",
+      "title-kz": "«Қазақстан Республикасының Президенті туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "government",
+      "title": "Закон «O Правительстве РК»",
+      "title-kz": "Қазақстан Республикасының Үкіметі туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "civilService",
+      "title": "Закон «O государственной службе РК»",
+      "title-kz": "Қазақстан Республикасының мемлекеттік қызметі туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "antiCorruption",
+      "title": "Закон «O противодействии коррупции»",
+      "title-kz": "Сыбайлас жемқорлыққа қарсы күрес туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "legalAct",
+      "title": "Закон «O правовых актах»",
+      "title-kz": "«Құқықтық актілер туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "publicServices",
+      "title": "Закон «O государственных услугах»",
+      "title-kz": "«Мемлекеттік көрсетілетін қызметтер туралы» заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "adminProcedures",
+      "title": "Административный процедурно-процессуальный кодекс РК",
+      "title-kz": "Қазақстан Республикасының Әкімшілік іс жүргізу кодексі",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "ethicalCode",
+      "title": "Этический кодекс государственных служащих РК (правила служебной этики госслужащих)",
+      "title-kz": "Қазақстан Республикасы мемлекеттік қызметшілерінің әдеп кодексі (Мемлекеттік қызметшілердің қызметтік этика қағидалары)",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 5
+    }
+  ],
+  "time": 115,
+  "questionsTotal": 130,
+  "passingScore": 91
+}

@@ -1,0 +1,188 @@
+<app-preloader *ngIf="isLoading"></app-preloader>
+
+<div class="page education">
+  <div class="page__header education__header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <p class="page__title education__title" [innerHTML]="'EDUCATION.TITLE' | translate"></p>
+          <p class="page__sub-title education__sub-title" [innerHTML]="'EDUCATION.SUB_TITLE' | translate "></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container" [hidden]="!isProductExpired">
+      <div class="row">
+        <div class="col-8 d-none-mobile">
+          <p class="exam-title" *ngIf="exams && exams.length > 0">{{activeLanguage === 'ru' ? exams[0]?.title : exams[0]['title-kz']}}</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right">
+          <div class="btn-group" style="margin-bottom: 30px;">
+            <!--<button class="education__btn"
+                    [class.active]="activeSection === 'test'"
+                    (click)="onChangeSection('test')"
+                    [disabled]="activeSection === 'test'">{{'EDUCATION.TEST' | translate}}</button>-->
+            <button class="education__btn"
+                    *ngIf="isAudioPresent"
+                    [class.active]="activeSection === 'audio'"
+                    (click)="onChangeSection('audio')"
+                    [disabled]="activeSection === 'audio'">{{'EDUCATION.AUDIO' | translate}}</button>
+            <button class="education__btn"
+                    *ngIf="isVideoPresent"
+                    [class.active]="activeSection === 'video'"
+                    (click)="onChangeSection('video')"
+                    [disabled]="activeSection === 'video'">{{'EDUCATION.VIDEO' | translate}}</button>
+            <button class="education__btn"
+                    [class.active]="activeSection === 'books'"
+                    (click)="onChangeSection('books')"
+                    [disabled]="activeSection === 'books'">{{!isLawsPresent ? ('EDUCATION.BOOKS' | translate) : ('EDUCATION.LAWS' | translate)}}</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+          <ng-container *ngFor="let exam of exams">
+            <div class="exam" [routerLink]="'../exam/' + exam?.id">
+              <img src="assets/icons/placeholder.svg" alt="">
+              <div class="exam__inner">
+                <div>
+                  <p class="exam__title">{{activeLanguage === 'ru' ? exams[0]?.title : exams[0]['title-kz']}}</p>
+                  <div class="exam__triggers">
+                    <ng-container *ngIf="exam?.time">
+                      <div class="trigger">
+                        <div class="trigger__top">
+                          <span class="trigger__value">{{exam?.time}}</span>
+                          <img class="trigger__img" src="../../assets/icons/time.svg" alt="">
+                        </div>
+                        <div class="trigger__bottom">
+                          <span class="trigger__text">{{'EXAM.TIME' | translate}}</span>
+                        </div>
+                      </div>
+                    </ng-container>
+                    <ng-container *ngIf="exam?.questionsTotal">
+                      <div class="trigger">
+                        <div class="trigger__top">
+                          <span class="trigger__value">{{exam?.questionsTotal}}</span>
+                          <img class="trigger__img" src="../../assets/icons/question.svg" alt="">
+                        </div>
+                        <div class="trigger__bottom">
+                          <span class="trigger__text">{{'EXAM.COUNT' | translate}}</span>
+                        </div>
+                      </div>
+                    </ng-container>
+                    <ng-container *ngIf="exam?.passingScore">
+                      <div class="trigger">
+                        <div class="trigger__top">
+                          <span class="trigger__value">{{exam?.passingScore}}<div *ngIf="exam.id === 'govForPeople'">/{{exam?.passingScore - 12}}</div></span>
+                          <img class="trigger__img" src="../../assets/icons/goal.svg" alt="">
+                        </div>
+                        <div class="trigger__bottom">
+                          <span class="trigger__text">{{'EXAM.SCORE' | translate}}</span>
+                        </div>
+                      </div>
+                    </ng-container>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div *ngIf="exam.id && exam.id !== 'govForPeople'" class="text-center">
+              <button class="education__btn zaz" [routerLink]="'../exam/' + exam?.id">{{'EXAM.START' | translate}}</button>
+            </div>
+            <div *ngIf="exam.id && exam.id === 'govForPeople'" class="text-center">
+              <div>{{'EXAM.START_FOR_HEAD' | translate}}</div>
+              <button class="education__btn zaz mt-1" [routerLink]="'../exam/' + exam?.id">{{'EXAM.START' | translate}}</button>
+              <div class="mt-4">{{'EXAM.START_FOR_SPEC' | translate}}</div>
+              <button class="education__btn zaz mt-1" [routerLink]="'../exam/' + exam?.id"
+                     [queryParams]="{
+                       publicServices: 7,
+                       personalData: 7,
+                       antiCorruption: 7,
+                       passingScore: '21'
+                       }"
+              >
+                {{'EXAM.START' | translate}}
+              </button>
+            </div>
+          </ng-container>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+          <div class="col">
+            <div class="education__video" [hidden]="activeSection !== 'video'">
+              <div class="education__grid" #videoGridRu [hidden]="activeLanguage === 'kz'"></div>
+              <div class="education__grid" #videoGridKz [hidden]="activeLanguage === 'ru'"></div>
+            </div>
+            <div class="education__audio" [hidden]="activeSection !== 'audio'">
+              <ng-container *ngFor="let exam of exams">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" *ngFor="let item of getProductByExamId(exam?.id)?.audio">
+                    <div class="audio-container">
+                      <p class="audio-container__title">{{getAudioTitle(item)}}</p>
+                      <plyr style="display: block;"
+                           [plyrPlaysInline]="true"
+                           [plyrType]="'audio'"
+                           [plyrSources]="onUpdateAudioSource(item[activeLanguage])"
+                           (plyrInit)="$event"
+                           (plyrPlay)="played($event)">
+                      </plyr>
+                    </div>
+                  </div>
+                </div>
+              </ng-container>
+            </div>
+            <div class="row ps-5" [hidden]="activeSection !== 'books'">
+              <ng-container *ngIf="activeLanguage === 'ru'">
+                <ul *ngIf="booksRu?.length">
+                  <li *ngFor="let book of booksRu">
+                    <a [href]="book.file.replace('src/', '')" download>{{book.name | books}}</a>
+                  </li>
+                </ul>
+                <ul *ngIf="lawsRu?.length">
+                  <li *ngFor="let law of lawsRu">
+                    <a [href]="law.file.replace('src/', '')" download>{{law.name | books}}</a>
+                  </li>
+                </ul>
+              </ng-container>
+              <ng-container *ngIf="activeLanguage === 'kz'">
+                <ul *ngIf="booksKz?.length">
+                  <li *ngFor="let book of booksKz">
+                    <a [href]="book.file.replace('src/', '')" download>{{book.name | books}}</a>
+                  </li>
+                </ul>
+                <ul *ngIf="lawsKz?.length">
+                  <li *ngFor="let law of lawsKz">
+                    <a [href]="law.file.replace('src/', '')" download>{{law.name | books}}</a>
+                  </li>
+                </ul>
+              </ng-container>
+            </div>
+          </div>
+       </div>
+     </div>
+    </div>
+    <div class="container" [hidden]="isProductExpired">
+      <div class="row man align-items-center">
+        <!--<div class="col-1"></div>-->
+        <div class="col-4 col-sm-2 pb-4 pb-sm-0">
+          <img src="../../assets/icons/man.svg" alt="">
+        </div>
+        <div class="col-12 col-sm-7 pb-4 pb-sm-0">
+          <p>{{'ACCOUNT.SUCCESSFUL-REGISTRATION' | translate}}</p>
+        </div>
+        <div class="col-9 col-sm-3 pb-4 pb-sm-0">
+          <img src="assets/images/instruction.jpg" alt="instruction">
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <p class="ps">{{'ACCOUNT.PS' | translate}}</p>
+        </div>
+        <div class="col-12 col-sm-1"></div>
+      </div>
+      <div class="row">
+        <!--<div class="col text-center">
+          <button class="education__btn zaz" (click)="checkStatus()">Проверить статус</button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+</div>

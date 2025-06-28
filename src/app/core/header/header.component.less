@@ -1,0 +1,98 @@
+.header{
+  background: #131231;
+  &__logo{
+    height: 34px;
+    width: auto;
+  }
+}
+.navbar{
+  margin: 0 auto;
+  &-brand {
+    color: #fff;
+  }
+  &-nav{
+    .nav-item{
+      &.active{
+        a{
+          color: #f8eb9c;
+        }
+      }
+      a{
+        color: rgb(177 141 52);
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-weight: 600;
+        &.btn{
+          padding: 0.25rem 0.5rem;
+          color: #212529;
+          margin: 4px 0 4px 20px;
+          font-weight: inherit;
+        }
+        fa-icon{
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+.language-switcher{
+  background: rgb(72 72 72);
+  border: solid 1px #b18d34;
+  border-radius: 52px;
+  padding: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  &__btn{
+    width: 40px;
+    height: 32px;
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+    outline: none !important;
+    color: #fff;
+    &.active{
+      background: #b18d34;
+    }
+  }
+  &-top {
+    display: none;
+  }
+}
+.logout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 20px;
+  a {
+    span {
+      color: #b18d34;
+      font-size: 21px;
+      font-weight: 600;
+      display: none;
+    }
+  }
+  img{
+    width: 24px;
+    margin: 0 0 0 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .language-switcher-top {
+    display: block;
+  }
+  .logout {
+    a {
+      span {
+        display: initial;
+      }
+    }
+  }
+}
+

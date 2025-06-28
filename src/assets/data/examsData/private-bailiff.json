@@ -1,0 +1,74 @@
+{
+  "id": "privateBailiffExam",
+  "title": "Частный судебный исполнитель",
+  "title-kz": "Жеке сот орындаушысы",
+  "topics": [
+    {
+      "id": "privateBailiff",
+      "title": "Об исполнительном производстве и статусе судебных исполнителей",
+      "title-kz": "Атқарушылық iс жүргiзу және сот орындаушыларының мәртебесi туралы",
+      "questions": [],
+      "questionsCount": 45,
+      "passingScore": 0
+    },
+    {
+      "id": "adminProceduresForBailiff",
+      "title": "Административный процедурно-процессуальный кодекс РК",
+      "title-kz": "ҚР әкімшілік рәсімдік-процестік кодексі",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 0
+    },
+    {
+      "id": "civilCodeForBailiff",
+      "title": "Гражданский кодекс РК",
+      "title-kz": "ҚР азаматтық кодексi",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "civilProcedureCodeForBailiff",
+      "title": "Гражданский процессуальный кодекс РК",
+      "title-kz": "ҚР Азаматтық процестік кодексі",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "criminalCodeForBailiff",
+      "title": "Уголовный кодекс РК",
+      "title-kz": "ҚР Қылмыстық кодексi",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "codeOfCriminalProcedureForBailiff",
+      "title": "Уголовно-процессуальный кодекс РК",
+      "title-kz": "ҚР Қылмыстық-процестік кодексi",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "adminOffensesForBailiff",
+      "title": "Кодекс РК об административных правонарушениях",
+      "title-kz": "ҚР Әкімшілік құқық бұзушылық туралы кодексi",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "familyCodeForBailiff",
+      "title": "Кодекс «О браке (супружестве) и семье»",
+      "title-kz": "Неке (ерлі-зайыптылық) және отбасы туралы кодексi",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    }
+  ],
+  "time": 90,
+  "questionsTotal": 100,
+  "passingScore": 70
+}

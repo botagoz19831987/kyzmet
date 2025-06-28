@@ -1,0 +1,16 @@
+{
+  "id": "selfService",
+  "title": "O местном гос. управлении и самоуправлении",
+  "description": "<p>Тест на знание закона «O местном государственном управлении и самоуправлении в РК»</p>",
+  "questions": [
+    {
+      "type": "radio",
+      "title": "",
+      "choices": [],
+      "correctAnswer": ""
+    }
+  ],
+  "time": 10,
+  "passingScore": 5,
+  "questionsTotal": 10
+}

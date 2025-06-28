@@ -1,0 +1,50 @@
+{
+  "id": "lawEnforcementServiceThird",
+  "title": "Правоохранительная госслужба (программа 3)",
+  "title-kz": "Құқық қорғау мемлекеттік қызметі (3-бағдарлама)",
+  "topics": [
+    {
+      "id": "constitution",
+      "title": "Конституция РК",
+      "title-kz": "Қазақстан Республикасының Конституциясы",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "president",
+      "title": "Закон «O Президенте РК»",
+      "title-kz": "«Қазақстан Республикасының Президенті туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "lawEnforcementService",
+      "title": "Закон «O правохранительной службе»",
+      "title-kz": "«Құқық қорғау қызметі туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "ethicalCode",
+      "title": "Этический кодекс государственных служащих РК (правила служебной этики госслужащих)",
+      "title-kz": "Қазақстан Республикасы мемлекеттік қызметшілерінің әдеп кодексі (Мемлекеттік қызметшілердің қызметтік этика қағидалары)",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "antiCorruption",
+      "title": "Закон «O противодействии коррупции»",
+      "title-kz": "Сыбайлас жемқорлыққа қарсы күрес туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    }
+  ],
+  "time": 60,
+  "questionsTotal": 75,
+  "passingScore": 35
+}

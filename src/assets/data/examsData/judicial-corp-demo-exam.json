@@ -1,0 +1,18 @@
+{
+  "id": "judicialCorpDemo",
+  "title": "ДЕМО тест по уголовному кодексу ",
+  "title-kz": "Қылмыстық кодекс бойынша ДЕМО тесті",
+  "topics": [
+    {
+      "id": "criminalCodeForJudicialCorpDemo",
+      "title": "Уголовный кодекс РК",
+      "title-kz": "ҚЫЛМЫСТЫҚ КОДЕКС РК",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    }
+  ],
+  "time": 30,
+  "questionsTotal": 15,
+  "passingScore": 5
+}

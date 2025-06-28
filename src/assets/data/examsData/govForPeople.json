@@ -1,0 +1,42 @@
+{
+  "id": "govForPeople",
+  "title": "НАО «Правительство для граждан» (ЦОН)",
+  "title-kz": "Азаматтарға арналған үкімет» КЕАҚ (ХҚО)",
+  "topics": [
+    {
+      "id": "publicServices",
+      "title": "Закон «O государственных услугах»",
+      "title-kz": "Мемлекеттік көрсетілетін қызметтер туралы» ҚРЗ",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 9
+    },
+    {
+      "id": "personalData",
+      "title": "Закон «O Персональных данных»",
+      "title-kz": "Дербес деректер және оларды қорғау туралы» ҚРЗ",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 9
+    },
+    {
+      "id": "antiCorruption",
+      "title": "Закон «O противодействии коррупции»",
+      "title-kz": "Сыбайлас жемқорлыққа қарсы іс-қимыл туралы» ҚРЗ",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 9
+    },
+    {
+      "id": "jointStockCompanies",
+      "title": "Закон «Oб акционерных обществах»",
+      "title-kz": "Акционерлік қоғамдар туралы» ҚРЗ",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 6
+    }
+  ],
+  "time": 60,
+  "questionsTotal": 60,
+  "passingScore": 33
+}

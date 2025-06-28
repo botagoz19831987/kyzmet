@@ -1,0 +1,66 @@
+{
+  "id": "headOfEducationalOrganizationSecond",
+  "title": "Аттестация руководителя",
+  "title-kz": "Басшыны аттестаттау",
+  "topics": [
+    {
+      "id": "tutorStatusLaw",
+      "title": "Закон «О статусе педагога»",
+      "title-kz": "Педагог мәртебесі туралы",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "educationLaw",
+      "title": "Закон «Об образовании»",
+      "title-kz": "Білім туралы",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "antiCorrupitonForHearOfEducation",
+      "title": "Закон «O противодействии коррупции»",
+      "title-kz": "Сыбайлас жемқорлық",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "approvalOfStandards",
+      "title": "Приказ Министерства просвещения РК от 3 августа 2022 года № 348",
+      "title-kz": "Стандарттарын бекіту туралы",
+      "questions": [],
+      "questionsCount": 5,
+      "passingScore": 0
+    },
+    {
+      "id": "familyCode",
+      "title": "Кодекс о браке (супружестве) и семье",
+      "title-kz": "О браке и семье КАЗ",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "workCode",
+      "title": "Трудовой кодекс Республики Казахстан",
+      "title-kz": "Қазақстан Республикасының Еңбек Кодексі",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    },
+    {
+      "id": "childrenRights",
+      "title": "Закон «О правах ребенка в РК»",
+      "title-kz": "«Қазақстан Республикасындағы баланың құқықтары туралы» Заң",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 0
+    }
+  ],
+  "time": 90,
+  "questionsTotal": 60,
+  "passingScore": 42
+}
