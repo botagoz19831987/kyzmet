@@ -127,8 +127,8 @@ export class HomeComponent implements OnInit {
   showFormError = false;
   requestToTelegramSent = false;
 
-  isProductActive = this.user?.expirationDate;
-  userProduct = this.user?.product;
+  isProductActive: any;
+  userProduct: any;
 
   reserveMode = null;
 
@@ -211,6 +211,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     this.authService.user$.pipe(take(1)).subscribe(u => {
       this.user = u;
+      this.isProductActive = this.user.expirationDate;
+      this.userProduct = this.user.product;
     });
 
     this.languageService.getLanguage()

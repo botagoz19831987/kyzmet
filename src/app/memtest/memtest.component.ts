@@ -121,7 +121,7 @@ export class MemtestComponent implements OnInit {
   userProduct: string;
   prod: any[] = [];
   user: IUser;
-  isProductActive = this.user?.expirationDate;
+  isProductActive: any;
   instructionLink = '';
 
   formName = '';
@@ -215,6 +215,7 @@ export class MemtestComponent implements OnInit {
   ngOnInit(): void {
     this.authService.user$.pipe(take(1)).subscribe(u => {
       this.user = u;
+      this.isProductActive = this.user?.expirationDate;
     });
     this.translateService.use('kz');
     this.languageService.getLanguage()
