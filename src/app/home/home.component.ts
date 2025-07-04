@@ -262,7 +262,7 @@ export class HomeComponent implements OnInit {
 
   public onBook(): void {
     if (this.isLoggedIn) {
-      if (this.user.product) {
+      if (this.user?.product) {
         this.onAccount();
       } else {
         localStorage.setItem('selectedExam', 'product46');

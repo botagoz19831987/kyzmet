@@ -1,0 +1,9 @@
+{
+  "id": "numberTextTest",
+  "title": "Текстовый и числовой тест",
+  "title-kz": "Мәтіндік және сандық тест",
+  "innerExams": [
+    "textExam",
+    "numberExam"
+  ]
+}

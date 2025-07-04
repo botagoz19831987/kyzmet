@@ -46,6 +46,7 @@ import {FormsModule} from '@angular/forms';
 import { PaymentResponseComponent } from './payments/payment-response/payment-response.component';
 import { MemtestComponent } from './memtest/memtest.component';
 import { SelectLawsModalComponent } from './modals/select-laws-modal/select-laws-modal.component';
+import {NgxImageZoomModule} from "ngx-image-zoom";
 
 @NgModule({
   declarations: [
@@ -105,7 +106,8 @@ import { SelectLawsModalComponent } from './modals/select-laws-modal/select-laws
         NgxJsonViewerModule,
         SharedModule,
         NgxPaginationModule,
-        FormsModule
+        FormsModule,
+        NgxImageZoomModule
     ],
   providers: [BsModalRef],
   bootstrap: [AppComponent]

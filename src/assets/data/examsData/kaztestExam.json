@@ -4,15 +4,29 @@
   "title-kz": "КазТЕСТ",
   "topics": [
     {
-      "id": "kaztestExam",
-      "title": "КазТЕСТ",
-      "title-kz": "КазТЕСТ",
+      "id": "kaztestReading",
+      "title": "Оқылым",
+      "title-kz": "Оқылым",
       "questions": [],
-      "questionsCount": 25,
-      "passingScore": 0
+      "questionsCount": 40,
+      "passingScore": 0,
+      "questionPerTitle": 5
+    },
+    {
+      "id": "kaztestListening",
+      "title": "Тыңдалым",
+      "title-kz": "Тыңдалым",
+      "questions": [],
+      "questionsCount": 20,
+      "questionPerTitle": 4,
+      "passingScore": 0,
+      "questionsRatio": {
+        "dialog": 4,
+        "text": 1
+      }
     }
   ],
-  "time": 25,
-  "questionsTotal": 25,
+  "time": null,
+  "questionsTotal": 60,
   "passingScore": null
 }

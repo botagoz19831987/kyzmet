@@ -13,7 +13,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import * as dayjs from 'dayjs';
 import {IUser} from '../shared/models/user.model';
 import {AuthService} from '../shared/services/auth.service';
-import {Subject} from 'rxjs';
+import {forkJoin, Subject} from 'rxjs';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { SelectLawsModalComponent } from '../modals/select-laws-modal/select-laws-modal.component';
 
@@ -178,12 +178,10 @@ export class AccountComponent implements OnInit, OnDestroy {
             array.push(p.data());
           });
 
-          console.log(array);
           const result = array.filter(item => {
             return item.video?.some(video => video.kz === 'pvv3SVGbEQE');
             /*return item.video?.some(video => video.kz === 'NgDXyVSO6Sk');*/
           });
-          console.log(result.map(i => i.id));
         });
   }
 
@@ -212,7 +210,9 @@ export class AccountComponent implements OnInit, OnDestroy {
           this.boughtProdInfo.push(p);
           this.isVideoPresent = !!p.video?.length;
           this.isAudioPresent = !!p.audio?.length;
-          !this.isVideoPresent && !this.isAudioPresent ? this.activeSection = 'books' : this.activeSection = 'audio';
+          this.activeSection = window.innerWidth > 576
+              ? !this.isVideoPresent && !this.isAudioPresent ? 'books' : 'audio'
+              : 'test';
           !this.booksRu?.length && !this.booksKz?.length && this.lawsRu?.length && this.lawsKz?.length ? this.isLawsPresent = true : this.isLawsPresent = false;
           this.afs
             .collection('exams')
@@ -220,8 +220,20 @@ export class AccountComponent implements OnInit, OnDestroy {
             .get()
             .pipe(take(1))
             .subscribe(ex => {
-              this.exams.push(ex.data());
-              console.log(this.exams);
+              const exData = ex.data();
+              if (!exData?.innerExams) {
+                this.exams.push(exData);
+              } else {
+                const examObservables = exData.innerExams.map(id =>
+                    this.afs.collection('exams').doc(id).get().pipe(take(1))
+                );
+
+                forkJoin(examObservables).subscribe(exams => {
+                  console.log(exams);
+                  this.exams = exams.map(doc => (doc as any).data());
+                  console.log(this.exams);
+                });
+              }
             });
         }
       });
@@ -440,4 +452,6 @@ export class AccountComponent implements OnInit, OnDestroy {
 
     this.isProductExpired = !!userData.expirationDate;
   }
+
+  public readonly window = window;
 }

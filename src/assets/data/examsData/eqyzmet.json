@@ -1,0 +1,10 @@
+{
+  "id": "eqyzmet",
+  "title": "Eqyzmet",
+  "title-kz": "Eqyzmet",
+  "innerExams": [
+    "eqyzmetExam",
+    "textExam",
+    "numberExam"
+  ]
+}

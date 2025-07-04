@@ -89,7 +89,7 @@
                  class="test__img w-100"
                  src="../../assets/images/{{'LANG' | translate}}/16.png"
                  alt=""
-                 (click)="openModal(null, 'modal-tariff')">
+                 (click)="onExamClick('numberTextTest')">
           </div>
 
           <!--Казтест-->
@@ -98,7 +98,7 @@
                  class="test__img w-100"
                  src="../../assets/images/{{'LANG' | translate}}/17.png"
                  alt=""
-                 (click)="openModal(null, 'modal-tariff')">
+                 (click)="onExamClick('kaztestExam')">
           </div>
 
           <!--Региональный кадровый резерв-->
@@ -107,7 +107,7 @@
                  class="test__img w-100"
                  src="../../assets/images/{{'LANG' | translate}}/15.png"
                  alt=""
-                 (click)="openModal(null, 'modal-tariff')">
+                 (click)="onExamClick('regionalPersonnelReserve')">
           </div>
 
           <!--ОЛК-->
@@ -125,11 +125,11 @@
                  class="test__img w-100"
                  src="../../assets/images/{{'LANG' | translate}}/18.png"
                  alt=""
-                 (click)="openModal(null, 'modal-tariff')">
+                 (click)="onExamClick('boshalak')">
           </div>
 
           <!--ПДД-->
-          <div class="col-4 col-sm-2">
+          <div class="col-4 col-sm-2 mb-0 mb-sm-4">
             <a href="https://testpdd.kz/" target="_blank">
               <img style="cursor: pointer;"
                    class="test__img w-100"
@@ -145,6 +145,7 @@
                  alt=""
                  (click)="openModal(govForPeople, 'modal-tariff')">
           </div>
+
           <!--Кадровый резерв Казахстана-->
           <!--<div class="col-4 col-sm-2">
             <img style="cursor: pointer;"

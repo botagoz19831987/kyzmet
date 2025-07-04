@@ -1,0 +1,42 @@
+{
+  "id": "regionalPersonnelReserve",
+  "title": "Региональный кадровый резерв",
+  "title-kz": "Өңірлік кадрлық резерв",
+  "topics": [
+    {
+      "id": "constitutionForRegionalReserve",
+      "title": "Конституция РК",
+      "title-kz": "Қазақстан Республикасының Конституциясы",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "ethicalCodeForRegionalReserve",
+      "title": "Этический кодекс государственных служащих РК (правила служебной этики госслужащих)",
+      "title-kz": "Қазақстан Республикасы мемлекеттік қызметшілерінің әдеп кодексі (Мемлекеттік қызметшілердің қызметтік этика қағидалары)",
+      "questions": [],
+      "questionsCount": 10,
+      "passingScore": 5
+    },
+    {
+      "id": "antiCorruptionForRegionalReserve",
+      "title": "Закон «O противодействии коррупции»",
+      "title-kz": "Сыбайлас жемқорлыққа қарсы күрес туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    },
+    {
+      "id": "civilServiceForRegionalReserve",
+      "title": "Закон «O государственной службе РК»",
+      "title-kz": "Қазақстан Республикасының мемлекеттік қызметі туралы» Заң",
+      "questions": [],
+      "questionsCount": 15,
+      "passingScore": 5
+    }
+  ],
+  "time": 60,
+  "questionsTotal": 55,
+  "passingScore": 30
+}

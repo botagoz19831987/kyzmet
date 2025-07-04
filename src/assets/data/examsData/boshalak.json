@@ -1,0 +1,10 @@
+{
+  "id": "boshalak",
+  "title": "Болашак",
+  "title-kz": "Болашақ",
+  "innerExams": [
+    "textExam",
+    "numberExam",
+    "kaztestExam"
+  ]
+}

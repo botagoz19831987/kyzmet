@@ -3,7 +3,6 @@
   "title": "Числовой тест",
   "description": "",
   "questions": [
-    [
       {
         "type": "radio",
         "title": "Какой процент составил развод к количеству браков в 2017 году?",
@@ -354,7 +353,6 @@
         "correctAnswer": "больше в 7,2 раза",
         "image": "1023"
       }
-    ]
   ],
   "time": 25,
   "passingScore": null,

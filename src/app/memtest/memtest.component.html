@@ -30,6 +30,7 @@
                  alt=""
                  (click)="openModal(admin, 'modal-tariff')"> <!--admin-->
           </div>
+          <!--Правоохранительная служба-->
           <div class="col-4 col-sm-2">
             <img style="cursor: pointer;"
                  class="test__img w-100"
@@ -37,6 +38,16 @@
                  alt=""
                  (click)="openModal(law, 'modal-tariff')"> <!--law-->
           </div>
+
+          <!--Президентский молодежный кадровый резерв-->
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/13.png"
+                 alt=""
+                 (click)="onExamClick('presidentialYouthPersonnelReserve')"> <!--law-->
+          </div>
+
           <div class="col-4 col-sm-2">
             <img style="cursor: pointer;"
                  class="test__img w-100"
@@ -44,6 +55,8 @@
                  alt=""
                  (click)="openModal(notariat, 'modal-tariff')"> <!--law-->
           </div>
+
+          <!--Адвокатура-->
           <div class="col-4 col-sm-2">
             <img style="cursor: pointer;"
                  class="test__img w-100"
@@ -51,6 +64,53 @@
                  alt=""
                  (click)="openModal(advocacy, 'modal-tariff')"> <!--law-->
           </div>
+
+          <!--Eqyzmet-->
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/9.png"
+                 alt=""
+                 (click)="onExamClick('eqyzmet')">
+          </div>
+
+          <!--Судебный корпус-->
+          <div class="col-4 col-sm-2 mb-sm-4">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/11.png"
+                 alt=""
+                 (click)="openModal(judicialcorpus, 'modal-tariff')">
+          </div>
+
+          <!--Текствой и числовой тест-->
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/16.png"
+                 alt=""
+                 (click)="onExamClick('numberTextTest')">
+          </div>
+
+          <!--Казтест-->
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/17.png"
+                 alt=""
+                 (click)="onExamClick('kaztestExam')">
+          </div>
+
+          <!--Региональный кадровый резерв-->
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/15.png"
+                 alt=""
+                 (click)="onExamClick('regionalPersonnelReserve')">
+          </div>
+
+          <!--ОЛК-->
           <div class="col-4 col-sm-2">
             <img style="cursor: pointer;"
                  class="test__img w-100"
@@ -58,6 +118,26 @@
                  alt=""
                  (click)="onBook()">
           </div>
+
+          <!--Болашак-->
+          <div class="col-4 col-sm-2">
+            <img style="cursor: pointer;"
+                 class="test__img w-100"
+                 src="../../assets/images/{{'LANG' | translate}}/18.png"
+                 alt=""
+                 (click)="onExamClick('boshalak')">
+          </div>
+
+          <!--ПДД-->
+          <div class="col-4 col-sm-2 mb-0 mb-sm-4">
+            <a href="https://testpdd.kz/" target="_blank">
+              <img style="cursor: pointer;"
+                   class="test__img w-100"
+                   src="../../assets/images/{{'LANG' | translate}}/19.png"
+                   alt="">
+            </a>
+          </div>
+
           <div class="col-4 col-sm-2">
             <img style="cursor: pointer;"
                  class="test__img w-100"
@@ -65,13 +145,16 @@
                  alt=""
                  (click)="openModal(govForPeople, 'modal-tariff')">
           </div>
-          <div class="col-4 col-sm-2">
+
+          <!--Кадровый резерв Казахстана-->
+          <!--<div class="col-4 col-sm-2">
             <img style="cursor: pointer;"
                  class="test__img w-100"
                  src="../../assets/images/{{'LANG' | translate}}/9.png"
                  alt=""
-                 (click)="openModal(reserve, 'modal-tariff')"> <!--law-->
-          </div>
+                 (click)="openModal(reserve, 'modal-tariff')"> &lt;!&ndash;law&ndash;&gt;
+          </div>-->
+
           <div class="col-4 col-sm-2">
             <img style="cursor: pointer;"
                  class="test__img w-100"
@@ -79,13 +162,7 @@
                  alt=""
                  (click)="openModal(headOfEducationalOrganization, 'modal-tariff')"> <!--law-->
           </div>
-          <div class="col-4 col-sm-2">
-            <img style="cursor: pointer;"
-                 class="test__img w-100"
-                 src="../../assets/images/{{'LANG' | translate}}/11.png"
-                 alt=""
-                 (click)="openModal(judicialcorpus, 'modal-tariff')">
-          </div>
+
           <div class="col-4 col-sm-2">
             <img style="cursor: pointer;"
                  class="test__img w-100"

@@ -133,6 +133,12 @@
       &__title {
         font-size: 24px;
       }
+      &__image {
+        width: 60vw;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 16px;
+      }
       &__variant {
         width: 100%;
         margin-bottom: 5px;

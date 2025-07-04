@@ -19,6 +19,10 @@ export interface ITopic {
   isSectionCompleted?: boolean;
   passingScore: number;
   'title-kz'?: string;
+  questionPerTitle?: number;
+  questionsRatio?: {
+    [key: string]: number;
+  };
 }
 
 export interface ITest {
@@ -34,6 +38,8 @@ export interface ITest {
 export interface IQuestion {
   type: EQuestionType;
   title: string;
+  image?: string;
+  audio?: string;
   choices: string[];
   selectedAnswer?: string;
   correctAnswer: string;

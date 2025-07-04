@@ -57,6 +57,7 @@ export class CheckoutComponent {
       this.id = requestedProduct;
       this.onGetProduct(requestedProduct).subscribe(res => {
         this.requestedProducts = res;
+        console.log(res);
         this.requestedProducts.map(prod => {
           if (prod?.books && prod.books?.ru?.length) {
             prod.books.ru.map((el: any) => {

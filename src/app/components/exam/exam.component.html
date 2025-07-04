@@ -7,7 +7,7 @@
           <div class="col text-center">
             <p class="page__title  exam__title">{{activeLanguage === 'kz' ? exam['title-kz'] : exam.title}}</p>
             <div class="exam__triggers">
-              <div class="trigger">
+              <div *ngIf="exam.time" class="trigger">
                 <div class="trigger__top">
                   <span class="trigger__value">{{exam.time}}</span>
                   <img class="trigger__img" src="../../../assets/icons/time.svg" alt="">
@@ -25,7 +25,7 @@
                   <span class="trigger__text">{{ 'EXAM.COUNT' | translate }}</span>
                 </div>
               </div>
-              <div class="trigger">
+              <div *ngIf="exam.passingScore" class="trigger">
                 <div class="trigger__top">
                   <span class="trigger__value">{{exam.passingScore}}</span>
                   <img class="trigger__img" src="../../../assets/icons/goal.svg" alt="">
@@ -35,16 +35,21 @@
                 </div>
               </div>
             </div>
-            <div class="zazaz-z">
-              <button class="exam__btn" (click)="onStart(true); cd.begin()">{{ 'EXAM.START' | translate }}</button>
-              <br>
-              <a class="exam__btn-link" (click)="onStart(false)">{{ 'EXAM.START_UNLIMITED' | translate }}</a>
-            </div>
-            <div class="exam__countdown" [class.d-none]="isFinished || !isCdVisible">
-              {{ 'EXAM.TIME_LEFT' | translate }}:
-              <countdown #cd [config]="{ leftTime: (exam.time * 60), demand: true }"
-                         (event)="timeIsOver($event)"></countdown>
-            </div>
+            <ng-container *ngIf="exam.time">
+              <div class="zazaz-z">
+                <button class="exam__btn" (click)="onStart(true); cd.begin()">{{ 'EXAM.START' | translate }}</button>
+                <br>
+                <a class="exam__btn-link" (click)="onStart(false)">{{ 'EXAM.START_UNLIMITED' | translate }}</a>
+              </div>
+              <div class="exam__countdown" [class.d-none]="isFinished || !isCdVisible">
+                {{ 'EXAM.TIME_LEFT' | translate }}:
+                <countdown #cd [config]="{ leftTime: (exam.time * 60), demand: true }"
+                           (event)="timeIsOver($event)"></countdown>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="!exam.time">
+              <button class="exam__btn" (click)="onStart(false)">{{ 'EXAM.START' | translate }}</button>
+            </ng-container>
           </div>
         </div>
       </div>
@@ -57,7 +62,7 @@
       <div class="row align-items-center">
         <div class="col">
           <div class="test">
-            <div *ngIf="!isFinished" class="col-12">
+            <div *ngIf="!isFinished && exam.topics.length > 1" class="col-12">
               <ul class="topic-progress__list">
                 <li *ngFor="let topic of exam.topics; let i = index"
                     [class.active]="topic.id === activeTopic"
@@ -72,9 +77,35 @@
             <ng-container *ngIf="isStarted && !isFinished">
               <ng-container *ngFor="let topic of exam.topics">
                 <div *ngIf="topic.id === activeTopic">
-                  <div class="test__question test-question" *ngFor="let item of topic.questions; let q = index">
+                  <div class="test__question test-question my-5" *ngFor="let item of topic.questions; let q = index">
                     <ng-container *ngIf="activeQuestion === (q + 1)">
-                      <p class="test-question__title">{{item?.title}}</p>
+                      <p class="test-question__title" [innerHTML]="item?.title"></p>
+
+                      <div *ngIf="item?.image" class="row mb-3" style="min-height: auto;">
+                        <div class="col-md-8">
+                          <lib-ngx-image-zoom
+                                  [thumbImage]="'/assets/images/questions-images/' + item.image + '.jpg'"
+                                  [fullImage]="'/assets/images/questions-images/' + item.image + '.jpg'"
+                                  [zoomMode]="'click'"
+                          >
+                          </lib-ngx-image-zoom>
+                        </div>
+                      </div>
+
+                      <div *ngIf="item?.audio" class="col-md-8 mb-3">
+                        <strong>{{ 'EDUCATION.AUDIO' | translate }}: {{item.audio}}</strong>
+                        <div class="audio-container">
+                          <plyr style="display: block;"
+                                [plyrPlaysInline]="true"
+                                [plyrType]="'audio'"
+                                [plyrSources]="audioSrc(item.audio)"
+                                (plyrInit)="$event"
+                          >
+                          </plyr>
+                        </div>
+                      </div>
+
+                      <!--<img *ngIf="item?.image" class="test-question__image" src="/assets/images/questions-images/{{item.image}}.jpg" alt="question image">-->
 
                       <ng-container *ngIf="item?.type === questionType.Radio">
                         <label *ngFor="let variant of item?.choices; let v = index"
@@ -163,7 +194,7 @@
               <tr>
                 <th scope="col">{{ 'EXAM.TASK' | translate }}</th>
                 <th scope="col">{{ 'EXAM.SCORED' | translate }}</th>
-                <th scope="col">{{ 'EXAM.SCORE' | translate }}</th>
+                <th *ngIf="exam.passingScore" scope="col">{{ 'EXAM.SCORE' | translate }}</th>
               </tr>
             </thead>
             <tbody>
@@ -174,7 +205,7 @@
                 <div *ngIf="activeLanguage === 'kz'">{{topic['title-kz']}}</div>
               </td>
               <td>{{correctAnswers[i]}} / {{topic.questionsCount}}</td>
-              <td>
+              <td *ngIf="exam.passingScore">
                 <div>{{topic.passingScore}}
                   <img *ngIf="correctAnswers[i] >= topic.passingScore" src="assets/icons/checkmark.svg" alt="checkmark">
                   <img *ngIf="correctAnswers[i] < topic.passingScore" src="assets/icons/cross-red.svg" alt="cross">
@@ -184,7 +215,7 @@
             <tr>
               <td>{{ 'EXAM.YOUR_RESULTS' | translate }}</td>
               <td>{{getCorrectAnswersCount}} / {{exam.questionsTotal}}</td>
-              <td>{{exam.passingScore}}
+              <td *ngIf="exam.passingScore">{{exam.passingScore}}
                 <img *ngIf="getCorrectAnswersCount >= exam.passingScore" src="assets/icons/checkmark.svg" alt="checkmark">
                 <img *ngIf="getCorrectAnswersCount < exam.passingScore" src="assets/icons/cross-red.svg" alt="cross">
               </td>
@@ -199,7 +230,7 @@
 
                 <ng-container *ngFor="let item of item.questions">
                   <div class="test-results__question test-results-question">
-                    <p class="test-results-question__title">{{item?.title}}</p>
+                    <p class="test-results-question__title" [innerHTML]="item?.title"></p>
                     <label *ngFor="let variant of item?.choices; let v = index"
                            [class.selected]="variant === item?.selectedAnswer"
                            [class.correct]="variant === item?.correctAnswer"

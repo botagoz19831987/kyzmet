@@ -265,7 +265,7 @@ export class MemtestComponent implements OnInit {
 
   public onBook(): void {
     if (this.isLoggedIn) {
-      if (this.user.product) {
+      if (this.user?.product) {
         this.onAccount();
       } else {
         localStorage.setItem('selectedExam', 'product46');
@@ -309,7 +309,9 @@ export class MemtestComponent implements OnInit {
 
   onCheckout(id: string): void {
     localStorage.setItem('selectedExam', id);
-    this.modalRef.hide();
+    if (this.modalRef) {
+      this.modalRef.hide();
+    }
     this.router.navigate(['../checkout/' + id]).then();
   }
 

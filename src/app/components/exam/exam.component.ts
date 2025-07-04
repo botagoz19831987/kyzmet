@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { EQuestionType, IExam, ITopic } from '../../shared/models/test.model';
+import {EQuestionType, IExam, IQuestion, ITopic} from '../../shared/models/test.model';
 
 import {AngularFirestore} from '@angular/fire/firestore';
 import {LanguageService} from '../../shared/services/language.service';
@@ -8,6 +8,7 @@ import { AuthService } from '../../shared/services/auth.service';
 import { selectableJudicialCorpLawsConstant } from './exams/selectableJudicialCorpLaws.constant';
 import { UserService } from '../../shared/services/user.service';
 import { tap } from 'rxjs/operators';
+import {LISTENING_TYPE} from "../../shared/enums/enums";
 
 @Component({
   selector: 'app-exam',
@@ -67,22 +68,22 @@ export class ExamComponent implements OnInit {
     if (this.isTimedOut) { return 'failed.svg'; }
     return '';
   }
-  public isLoading = true;
-  public exam: IExam;
-  public tests: any[];
-  public isStarted = false;
-  public isFinished = false;
-  public isResults = false;
+  isLoading = true;
+  exam: IExam;
+  tests: any[];
+  isStarted = false;
+  isFinished = false;
+  isResults = false;
 
-  public isFailed = false;
-  public isPassed = false;
-  public isTimedOut = false;
+  isFailed = false;
+  isPassed = false;
+  isTimedOut = false;
 
-  public questionType = EQuestionType;
-  public activeQuestion = 0;
-  public activeTopic: string;
+  questionType = EQuestionType;
+  activeQuestion = 0;
+  activeTopic: string;
 
-  public correctAnswers = [];
+  correctAnswers = [];
 
   ngOnInit(): void {
     this.languageService.getLanguage()
@@ -141,10 +142,57 @@ export class ExamComponent implements OnInit {
     this.exam.topics = this.exam.topics.filter(topic => topic.id);
     this.exam.topics.forEach(topic => {
       topic.questions = [];
-      let questions = this.tests.find(test => {
-        return test.id === (this.activeLanguage === 'ru' ? topic.id : topic.id + '-kz');
-      })?.questions;
-      questions = this.shuffleArray(questions);
+      const test = this.tests.find(t => {
+        return t.id === (this.activeLanguage === 'ru' ? topic.id : topic.id + '-kz');
+      });
+      let questions = test?.questions;
+
+      if (topic.questionPerTitle && !topic.questionsRatio) {
+        const topicsAmount = Math.floor(topic.questionsCount / topic.questionPerTitle);
+        test.mainTitles = this.removeRandomEntries(test.mainTitles, Object.keys(test.mainTitles).length - topicsAmount);
+        questions = questions.filter(item => Object.keys(test.mainTitles).map(i => +i).includes(item.relatedTo));
+        questions = this.getGroupedAndShuffledItems(questions, Object.keys(test.mainTitles), topic.questionPerTitle);
+      } else if (topic.questionsRatio && topic.questionsRatio) {
+        // 1) group by audio
+        const groups = questions.reduce((acc, q) => {
+          (acc[q.audio] = acc[q.audio] || []).push(q);
+          return acc;
+        }, {});
+
+        // 2) how many blocks of questionsPerTitle we need
+        const totalBlocks = topic.questionsCount / topic.questionPerTitle; // e.g. 20/4 = 5
+        const ratioSum     = topic.questionsRatio.dialog + topic.questionsRatio.text; // e.g. 4 + 1 = 5
+        const textBlocks   = Math.round(totalBlocks * topic.questionsRatio.text / ratioSum);
+        const dialogBlocks = totalBlocks - textBlocks;
+
+        // 3) collect audio keys by mode
+        const textAudios   = Object.entries(groups)
+            .filter(([_, arr]) => arr[0].mode === LISTENING_TYPE.TEXT)
+            .map(([audio]) => audio);
+
+        const dialogAudios = Object.entries(groups)
+            .filter(([_, arr]) => arr[0].mode === LISTENING_TYPE.DIALOG)
+            .map(([audio]) => audio);
+
+        // 4) pick X text-blocks, Y dialog-blocks
+        const chosenTextAudios   = this.shuffleArray(textAudios).slice(0, textBlocks);
+        const chosenDialogAudios = this.shuffleArray(dialogAudios).slice(0, dialogBlocks);
+
+        // 5) mix block order
+        const allBlocks = [...this.shuffleArray(chosenTextAudios), ...chosenDialogAudios].reverse();
+
+        // 6) for each block, shuffle its questions and take the first questionsPerTitle
+        const result = [];
+        for (const audio of allBlocks) {
+          const blockQs = this.shuffleArray(groups[audio]).slice(0, topic.questionPerTitle);
+          result.push(...blockQs);
+        }
+
+        questions = result;
+      } else {
+        questions = this.shuffleArray(questions);
+      }
+
       questions.forEach(q => {
         const ch = [];
         q.choices.forEach(c => ch.push(c));
@@ -195,7 +243,12 @@ export class ExamComponent implements OnInit {
   }
 
   public onStop(reason?: string): void {
+    console.log('STOP');
     this.isFinished = true;
+    if (!this.exam.passingScore) {
+      this.isResults = true;
+    }
+
     if (reason === 'time') { this.isTimedOut = true; }
     if (reason === 'failed') { this.isFailed = true; }
 
@@ -208,6 +261,8 @@ export class ExamComponent implements OnInit {
       this.isPassed = false;
       this.isFailed = true;
     }
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   public onSelectVariant(e, t): void {
@@ -246,6 +301,7 @@ export class ExamComponent implements OnInit {
   }
 
   public onShowResults(): void {
+    console.log('RESULTS');
     this.isResults = true;
   }
   public onSelectQuestion(question): void {
@@ -266,5 +322,39 @@ export class ExamComponent implements OnInit {
       });
       this.correctAnswers.push(correctAnswersInTopic);
     });
+  }
+
+  removeRandomEntries<T>(data: Record<string, T>, countToRemove: number): Record<string, T> {
+    const keys = Object.keys(data);
+    const keysToRemove = keys.sort(() => 0.5 - Math.random()).slice(0, countToRemove);
+
+    const result: Record<string, T> = {};
+    for (const key of keys) {
+      if (!keysToRemove.includes(key)) {
+        result[key] = data[key];
+      }
+    }
+
+    return result;
+  }
+
+  getGroupedAndShuffledItems(items: any[], relatedIds: string[], questionPerTitle: number): any[] {
+    const grouped: any[] = [];
+    relatedIds = this.shuffleArray(relatedIds);
+
+    for (const id of relatedIds) {
+      const group = items.filter(item => {
+        return item.relatedTo === +id;
+      });
+      const selected = this.shuffleArray([...group]).slice(0, questionPerTitle);
+      grouped.push(...selected);
+    }
+
+    return grouped;
+  }
+
+
+  audioSrc(audio: string): any {
+    return '/assets/audio/audio-questions/' + audio + '.mp3';
   }
 }
