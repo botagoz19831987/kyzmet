@@ -19,6 +19,9 @@ export class ExamComponent implements OnInit {
   isCdVisible: boolean;
   public activeLanguage = 'ru';
   examMutateParams;
+  showSolution = false;
+  panelOpenState = false;
+
   constructor(
     private languageService: LanguageService,
     private activatedRoute: ActivatedRoute,
@@ -286,6 +289,7 @@ export class ExamComponent implements OnInit {
       }
       this.activeQuestion = 1;
     }
+    this.showSolution = false;
   }
 
   public topicById(str): ITopic {
@@ -353,6 +357,10 @@ export class ExamComponent implements OnInit {
     return grouped;
   }
 
+  onSendAnswer(question: IQuestion): void {
+    this.showSolution = true;
+    console.log(question);
+  }
 
   audioSrc(audio: string): any {
     return '/assets/audio/audio-questions/' + audio + '.mp3';

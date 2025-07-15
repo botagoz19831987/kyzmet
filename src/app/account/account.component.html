@@ -51,9 +51,16 @@
           || (exams.length > 1 && (activeSection === 'audio' && isAudioPresent)
           || (activeSection === 'video' && isVideoPresent)
           || (activeSection === 'books' && (booksRu?.length || booksKz?.length)))">
-          <div class="row flex-column flex-md-row">
+          <div class="row" [class.flex-column]="exams.length > 1
+          && ((activeSection === 'audio' && isAudioPresent)
+          || (activeSection === 'books' && (booksRu?.length || booksKz?.length))
+          || (activeSection === 'video' && isVideoPresent))"
+          >
             <ng-container *ngFor="let exam of exams">
-              <div class="col" [class.mb-4]="exams.length > 1">
+              <div class="col"
+                   [class.mb-4]="exams.length > 1"
+                   [class.col-4]="exams.length > 1"
+              >
                 <div class="exam" [routerLink]="'../exam/' + exam?.id">
                   <img src="assets/icons/placeholder.svg" alt="">
                   <div class="exam__inner">
@@ -131,22 +138,20 @@
               <div class="education__grid" #videoGridKz [hidden]="activeLanguage === 'ru'"></div>
             </div>
             <div class="education__audio" [hidden]="activeSection !== 'audio'">
-              <ng-container *ngFor="let exam of exams">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" *ngFor="let item of getProductByExamId(exam?.id)?.audio">
-                    <div class="audio-container">
-                      <p class="audio-container__title">{{getAudioTitle(item)}}</p>
-                      <plyr style="display: block;"
-                           [plyrPlaysInline]="true"
-                           [plyrType]="'audio'"
-                           [plyrSources]="onUpdateAudioSource(item[activeLanguage])"
-                           (plyrInit)="$event"
-                           (plyrPlay)="played($event)">
-                      </plyr>
-                    </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" *ngFor="let item of getProductByExamId(exams[0]?.id)?.audio">
+                  <div class="audio-container">
+                    <p class="audio-container__title">{{getAudioTitle(item)}}</p>
+                    <plyr style="display: block;"
+                          [plyrPlaysInline]="true"
+                          [plyrType]="'audio'"
+                          [plyrSources]="onUpdateAudioSource(item[activeLanguage])"
+                          (plyrInit)="$event"
+                          (plyrPlay)="played($event)">
+                    </plyr>
                   </div>
                 </div>
-              </ng-container>
+              </div>
             </div>
             <div class="row ps-5" [hidden]="activeSection !== 'books'">
               <ng-container *ngIf="activeLanguage === 'ru'">

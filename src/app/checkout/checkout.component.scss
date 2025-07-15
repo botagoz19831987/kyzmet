@@ -96,11 +96,22 @@
   }
 }
 
-.ps {
-  padding: 20px 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+::ng-deep {
+  .ps {
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    ul, ol {
+      margin: 0 auto;
+      width: fit-content;
+
+      li {
+        text-align: left;
+      }
+    }
+  }
 }
 
 .checkout__down{

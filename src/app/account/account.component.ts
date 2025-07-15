@@ -125,6 +125,7 @@ export class AccountComponent implements OnInit, OnDestroy {
   public boughtItem;
   public boughtProdInfo = [];
   isProductExpired: boolean;
+  mainExamId: string;
   public exams = [];
   public currentProduct = 1;
   public request = JSON.parse(localStorage.getItem('user')).request;
@@ -224,6 +225,7 @@ export class AccountComponent implements OnInit, OnDestroy {
               if (!exData?.innerExams) {
                 this.exams.push(exData);
               } else {
+                this.mainExamId = exData.id;
                 const examObservables = exData.innerExams.map(id =>
                     this.afs.collection('exams').doc(id).get().pipe(take(1))
                 );
@@ -248,7 +250,11 @@ export class AccountComponent implements OnInit, OnDestroy {
   }
 
   getProductByExamId(id): any {
-    return this.boughtProdInfo.find(i => i.examID === id);
+    if (this.exams.length > 1) {
+      return this.boughtProdInfo.find(i => i.examID === this.mainExamId);
+    } else {
+      return this.boughtProdInfo.find(i => i.examID === id);
+    }
   }
 
   getAudioTitle(path: string): string {

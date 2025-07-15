@@ -3574,7 +3574,7 @@
       "CHECKOUT.ITEMS.NUMBER_TEST",
       "CHECKOUT.ITEMS.KAZTEST",
       "CHECKOUT.WORK",
-      "CHECKOUT.LAWS"
+      "HOME.BENEFIT_6_TEXT"
     ],
     "price": 10000,
     "duration": 10
@@ -3588,7 +3588,7 @@
       "CHECKOUT.ITEMS.NUMBER_TEST",
       "CHECKOUT.ITEMS.KAZTEST",
       "CHECKOUT.WORK",
-      "CHECKOUT.LAWS"
+      "HOME.BENEFIT_6_TEXT"
     ],
     "price": 15000,
     "duration": 20
@@ -3602,7 +3602,7 @@
       "CHECKOUT.ITEMS.NUMBER_TEST",
       "CHECKOUT.ITEMS.KAZTEST",
       "CHECKOUT.WORK",
-      "CHECKOUT.LAWS"
+      "HOME.BENEFIT_6_TEXT"
     ],
     "price": 25000,
     "duration": 30
@@ -3720,7 +3720,7 @@
       }
     ],
     "price": 10000,
-    "duration": 20
+    "duration": 3
   },
   {
     "id": "product57",
@@ -3796,7 +3796,7 @@
       }
     ],
     "price": 15000,
-    "duration": 20
+    "duration": 10
   },
   {
     "id": "product58",
@@ -3879,47 +3879,45 @@
     "examID": "kaztestExam",
     "program": "first",
     "items": [
-      "CHECKOUT.ITEMS.TEXT_TEST",
-      "CHECKOUT.ITEMS.NUMBER_TEST",
+      "CHECKOUT.ITEMS.LISTENING",
+      "CHECKOUT.ITEMS.READING",
       "CHECKOUT.WORK",
-      "HOME.BENEFIT_6_TEXT"
+      "CHECKOUT.ITEMS.UNLIMITED"
     ],
     "price": 8000,
-    "duration": 5
+    "duration": 3
   },
   {
     "id": "product60",
     "examID": "kaztestExam",
     "program": "second",
     "items": [
-      "CHECKOUT.ITEMS.TEXT_TEST",
-      "CHECKOUT.ITEMS.NUMBER_TEST",
+      "CHECKOUT.ITEMS.LISTENING",
+      "CHECKOUT.ITEMS.READING",
       "CHECKOUT.WORK",
-      "HOME.BENEFIT_6_TEXT"
+      "CHECKOUT.ITEMS.UNLIMITED"
     ],
     "price": 10000,
-    "duration": 5
+    "duration": 10
   },
   {
     "id": "product61",
     "examID": "kaztestExam",
     "program": "third",
     "items": [
-      "CHECKOUT.ITEMS.TEXT_TEST",
-      "CHECKOUT.ITEMS.NUMBER_TEST",
+      "CHECKOUT.ITEMS.LISTENING",
+      "CHECKOUT.ITEMS.READING",
       "CHECKOUT.WORK",
-      "HOME.BENEFIT_6_TEXT"
+      "CHECKOUT.ITEMS.UNLIMITED"
     ],
     "price": 15000,
-    "duration": 5
+    "duration": 20
   },
   {
     "id": "product62",
     "examID": "regionalPersonnelReserve",
     "program": "first",
     "items": [
-      "CHECKOUT.ITEMS.TEXT_TEST",
-      "CHECKOUT.ITEMS.NUMBER_TEST",
       "CHECKOUT.TEST",
       "CHECKOUT.VIDEO",
       "CHECKOUT.AUDIO",
@@ -3964,8 +3962,8 @@
         "kz": "tGTTjwZf5zs"
       },
       {
-        "ru": "UvpXjzypEO8",
-        "kz": "1FD3IhKGX-0"
+        "ru": "udBKdwZXVBk",
+        "kz": "zbioKR6yD0k-0"
       }
     ],
     "audio": [
@@ -3994,8 +3992,6 @@
     "examID": "regionalPersonnelReserve",
     "program": "second",
     "items": [
-      "CHECKOUT.ITEMS.TEXT_TEST",
-      "CHECKOUT.ITEMS.NUMBER_TEST",
       "CHECKOUT.TEST",
       "CHECKOUT.VIDEO",
       "CHECKOUT.AUDIO",
@@ -4040,8 +4036,8 @@
         "kz": "tGTTjwZf5zs"
       },
       {
-        "ru": "UvpXjzypEO8",
-        "kz": "1FD3IhKGX-0"
+        "ru": "udBKdwZXVBk",
+        "kz": "zbioKR6yD0k"
       }
     ],
     "audio": [
@@ -4070,8 +4066,6 @@
     "examID": "regionalPersonnelReserve",
     "program": "third",
     "items": [
-      "CHECKOUT.ITEMS.TEXT_TEST",
-      "CHECKOUT.ITEMS.NUMBER_TEST",
       "CHECKOUT.TEST",
       "CHECKOUT.VIDEO",
       "CHECKOUT.AUDIO",
@@ -4116,8 +4110,8 @@
         "kz": "tGTTjwZf5zs"
       },
       {
-        "ru": "UvpXjzypEO8",
-        "kz": "1FD3IhKGX-0"
+        "ru": "udBKdwZXVBk",
+        "kz": "zbioKR6yD0k"
       }
     ],
     "audio": [

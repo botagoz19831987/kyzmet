@@ -1,12 +1,12 @@
 {
   "id": "textExam",
-  "title": "Вербальный тест (текстовый)",
-  "title-kz": "Вербалды тест (мәтіндік)",
+  "title": "Тесты",
+  "title-kz": "Тесттер",
   "topics": [
     {
       "id": "textExam",
-      "title": "Вербальный тест (текстовый)",
-      "title-kz": "Вербалды тест (мәтіндік)",
+      "title": "Тесты",
+      "title-kz": "Тесттер",
       "questions": [],
       "questionsCount": 25,
       "passingScore": 0

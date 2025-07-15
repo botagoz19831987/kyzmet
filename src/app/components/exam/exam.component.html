@@ -121,15 +121,39 @@
 
                       <ng-container *ngIf="item?.type === questionType.Checkbox"></ng-container>
 
+                      <mat-accordion *ngIf="item.solution && showSolution">
+                        <mat-expansion-panel (opened)="panelOpenState = true"
+                                             (closed)="panelOpenState = false">
+                          <mat-expansion-panel-header [ngClass]="item.correctAnswer === item.selectedAnswer ? 'correct-answer' : 'wrong-answer'">
+                            <mat-panel-title>
+                              {{ (item.correctAnswer === item.selectedAnswer
+                                ? 'EXAM.CORRECT_ANSWER'
+                                : 'EXAM.NOT_CORRECT_ANSWER') | translate }}
+                            </mat-panel-title>
+                            <!--<mat-panel-description>
+                              Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                            </mat-panel-description>-->
+                          </mat-expansion-panel-header>
+                          <ng-container *ngIf="item.correctAnswer !== item.selectedAnswer">
+                            <strong style="font-size: 16px">{{ 'EXAM.CORRECT_ANSWER' | translate }}</strong><span style="font-size: 16px">: {{ item.correctAnswer }}</span>
+                          </ng-container>
+                          <p style="font-size: 16px; margin-top: 10px">{{ item.solution }}</p>
+                        </mat-expansion-panel>
+                      </mat-accordion>
+
 
                       <div class="test-question__footer">
                         <button class="btn test-question__btn test-question__btn_prev"
                                 [disabled]="activeTopic === exam.topics[0].id && activeQuestion === 1"
                                 (click)="onPrevQuestion()">{{ 'EXAM.PREV_QUESTION' | translate }}
                         </button>
-                        <button class="btn test-question__btn test-question__btn_next"
+                        <button *ngIf="!item.solution || (item.solution && (!item.selectedAnswer || (item.selectedAnswer && showSolution)))" class="btn test-question__btn test-question__btn_next"
                                 (click)="onNextQuestion()">
                           {{(isLastQuestion ? 'EXAM.END_TEST' : 'EXAM.NEXT_QUESTION') | translate}}
+                        </button>
+                        <button *ngIf="item.solution && item.selectedAnswer && !showSolution" class="btn test-question__btn test-question__btn_next"
+                                (click)="onSendAnswer(item)">
+                          {{ 'EXAM.ANSWER' | translate}}
                         </button>
                       </div>
                     </ng-container>
@@ -195,6 +219,7 @@
                 <th scope="col">{{ 'EXAM.TASK' | translate }}</th>
                 <th scope="col">{{ 'EXAM.SCORED' | translate }}</th>
                 <th *ngIf="exam.passingScore" scope="col">{{ 'EXAM.SCORE' | translate }}</th>
+                <th *ngIf="exam.id.includes('kaztest')" scope="col">{{ 'EXAM.LANGUAGE_LEVEL' | translate }}</th>
               </tr>
             </thead>
             <tbody>
@@ -211,6 +236,15 @@
                   <img *ngIf="correctAnswers[i] < topic.passingScore" src="assets/icons/cross-red.svg" alt="cross">
                 </div>
               </td>
+              <td *ngIf="exam.id.includes('kaztest')">
+                <div>
+                  <ng-container *ngIf="correctAnswers[i]/topic.questionsCount >= 0.3 && correctAnswers[i]/topic.questionsCount < 0.4">A1</ng-container>
+                  <ng-container *ngIf="correctAnswers[i]/topic.questionsCount >= 0.4 && correctAnswers[i]/topic.questionsCount < 0.5">A2</ng-container>
+                  <ng-container *ngIf="correctAnswers[i]/topic.questionsCount >= 0.5 && correctAnswers[i]/topic.questionsCount < 0.6">B1</ng-container>
+                  <ng-container *ngIf="correctAnswers[i]/topic.questionsCount >= 0.6 && correctAnswers[i]/topic.questionsCount < 0.8">B2</ng-container>
+                  <ng-container *ngIf="correctAnswers[i]/topic.questionsCount >= 0.8">C1</ng-container>
+                </div>
+              </td>
             </tr>
             <tr>
               <td>{{ 'EXAM.YOUR_RESULTS' | translate }}</td>
@@ -218,6 +252,15 @@
               <td *ngIf="exam.passingScore">{{exam.passingScore}}
                 <img *ngIf="getCorrectAnswersCount >= exam.passingScore" src="assets/icons/checkmark.svg" alt="checkmark">
                 <img *ngIf="getCorrectAnswersCount < exam.passingScore" src="assets/icons/cross-red.svg" alt="cross">
+              </td>
+              <td *ngIf="exam.id.includes('kaztest')">
+                <div>
+                  <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal >= 0.3 && getCorrectAnswersCount/exam.questionsTotal < 0.4">A1</ng-container>
+                  <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal >= 0.4 && getCorrectAnswersCount/exam.questionsTotal < 0.5">A2</ng-container>
+                  <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal >= 0.5 && getCorrectAnswersCount/exam.questionsTotal < 0.6">B1</ng-container>
+                  <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal >= 0.6 && getCorrectAnswersCount/exam.questionsTotal < 0.8">B2</ng-container>
+                  <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal >= 0.8">C1</ng-container>
+                </div>
               </td>
             </tr>
             </tbody>

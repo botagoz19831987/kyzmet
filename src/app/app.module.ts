@@ -47,6 +47,7 @@ import { PaymentResponseComponent } from './payments/payment-response/payment-re
 import { MemtestComponent } from './memtest/memtest.component';
 import { SelectLawsModalComponent } from './modals/select-laws-modal/select-laws-modal.component';
 import {NgxImageZoomModule} from "ngx-image-zoom";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
   declarations: [
@@ -107,7 +108,8 @@ import {NgxImageZoomModule} from "ngx-image-zoom";
         SharedModule,
         NgxPaginationModule,
         FormsModule,
-        NgxImageZoomModule
+        NgxImageZoomModule,
+        MatExpansionModule
     ],
   providers: [BsModalRef],
   bootstrap: [AppComponent]

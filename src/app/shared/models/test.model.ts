@@ -43,6 +43,7 @@ export interface IQuestion {
   choices: string[];
   selectedAnswer?: string;
   correctAnswer: string;
+  solution?: string;
 }
 
 export enum EQuestionType {
