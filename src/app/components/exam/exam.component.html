@@ -79,6 +79,11 @@
                 <div *ngIf="topic.id === activeTopic">
                   <div class="test__question test-question my-5" *ngFor="let item of topic.questions; let q = index">
                     <ng-container *ngIf="activeQuestion === (q + 1)">
+                      <p *ngIf="!isNaN(item.relatedTo) && topic?.mainTitles[item.relatedTo]"
+                         [innerHTML]="topic.mainTitles[item.relatedTo]"
+                         class="test-question__title"
+                      ></p>
+
                       <p class="test-question__title" [innerHTML]="item?.title"></p>
 
                       <div *ngIf="item?.image" class="row mb-3" style="min-height: auto;">
@@ -137,10 +142,9 @@
                           <ng-container *ngIf="item.correctAnswer !== item.selectedAnswer">
                             <strong style="font-size: 16px">{{ 'EXAM.CORRECT_ANSWER' | translate }}</strong><span style="font-size: 16px">: {{ item.correctAnswer }}</span>
                           </ng-container>
-                          <p style="font-size: 16px; margin-top: 10px">{{ item.solution }}</p>
+                          <p [innerHTML]="item.solution" style="font-size: 16px; margin-top: 10px"></p>
                         </mat-expansion-panel>
                       </mat-accordion>
-
 
                       <div class="test-question__footer">
                         <button class="btn test-question__btn test-question__btn_prev"
@@ -238,6 +242,7 @@
               </td>
               <td *ngIf="exam.id.includes('kaztest')">
                 <div>
+                  <ng-container *ngIf="correctAnswers[i]/topic.questionsCount < 0.3">{{ 'EXAM.NOT_PASSED' | translate }}</ng-container>
                   <ng-container *ngIf="correctAnswers[i]/topic.questionsCount >= 0.3 && correctAnswers[i]/topic.questionsCount < 0.4">A1</ng-container>
                   <ng-container *ngIf="correctAnswers[i]/topic.questionsCount >= 0.4 && correctAnswers[i]/topic.questionsCount < 0.5">A2</ng-container>
                   <ng-container *ngIf="correctAnswers[i]/topic.questionsCount >= 0.5 && correctAnswers[i]/topic.questionsCount < 0.6">B1</ng-container>
@@ -255,6 +260,7 @@
               </td>
               <td *ngIf="exam.id.includes('kaztest')">
                 <div>
+                  <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal < 0.3">{{ 'EXAM.NOT_PASSED' | translate }}</ng-container>
                   <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal >= 0.3 && getCorrectAnswersCount/exam.questionsTotal < 0.4">A1</ng-container>
                   <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal >= 0.4 && getCorrectAnswersCount/exam.questionsTotal < 0.5">A2</ng-container>
                   <ng-container *ngIf="getCorrectAnswersCount/exam.questionsTotal >= 0.5 && getCorrectAnswersCount/exam.questionsTotal < 0.6">B1</ng-container>

@@ -16,7 +16,12 @@
     <div class="container" [hidden]="!isProductExpired">
       <div class="row">
         <div class="col-8 d-none-mobile">
-          <p class="exam-title" *ngIf="exams && exams.length > 0">{{activeLanguage === 'ru' ? exams[0]?.title : exams[0]['title-kz']}}</p>
+          <p class="exam-title" *ngIf="exams && exams.length === 1">
+            {{activeLanguage === 'ru' ? exams[0]?.title : exams[0]['title-kz']}}
+          </p>
+          <p class="exam-title" *ngIf="exams && exams.length > 1">
+            {{ 'EDUCATION.TEST' | translate }}
+          </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right">
           <div *ngIf="(window.innerWidth <= 576 && exams?.length) || isAudioPresent || isVideoPresent || (booksRu?.length || booksKz?.length)"
@@ -59,7 +64,10 @@
             <ng-container *ngFor="let exam of exams">
               <div class="col"
                    [class.mb-4]="exams.length > 1"
-                   [class.col-4]="exams.length > 1"
+                   [class.col-4]="exams.length > 1
+          && ((activeSection === 'audio' && !isAudioPresent)
+          || (activeSection === 'books' && (!booksRu?.length && !booksKz?.length))
+          || (activeSection === 'video' && !isVideoPresent))"
               >
                 <div class="exam" [routerLink]="'../exam/' + exam?.id">
                   <img src="assets/icons/placeholder.svg" alt="">

@@ -152,9 +152,9 @@ export class ExamComponent implements OnInit {
 
       if (topic.questionPerTitle && !topic.questionsRatio) {
         const topicsAmount = Math.floor(topic.questionsCount / topic.questionPerTitle);
-        test.mainTitles = this.removeRandomEntries(test.mainTitles, Object.keys(test.mainTitles).length - topicsAmount);
-        questions = questions.filter(item => Object.keys(test.mainTitles).map(i => +i).includes(item.relatedTo));
-        questions = this.getGroupedAndShuffledItems(questions, Object.keys(test.mainTitles), topic.questionPerTitle);
+        topic.mainTitles = this.removeRandomEntries(test.mainTitles, Object.keys(test.mainTitles).length - topicsAmount);
+        questions = questions.filter(item => Object.keys(topic.mainTitles).map(i => +i).includes(item.relatedTo));
+        questions = this.getGroupedAndShuffledItems(questions, Object.keys(topic.mainTitles), topic.questionPerTitle);
       } else if (topic.questionsRatio && topic.questionsRatio) {
         // 1) group by audio
         const groups = questions.reduce((acc, q) => {
@@ -365,4 +365,6 @@ export class ExamComponent implements OnInit {
   audioSrc(audio: string): any {
     return '/assets/audio/audio-questions/' + audio + '.mp3';
   }
+
+  protected readonly isNaN = isNaN;
 }

@@ -23,6 +23,7 @@ export interface ITopic {
   questionsRatio?: {
     [key: string]: number;
   };
+  mainTitles?: any;
 }
 
 export interface ITest {
@@ -44,6 +45,7 @@ export interface IQuestion {
   selectedAnswer?: string;
   correctAnswer: string;
   solution?: string;
+  relatedTo?: number;
 }
 
 export enum EQuestionType {
