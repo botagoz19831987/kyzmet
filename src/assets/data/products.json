@@ -3628,8 +3628,23 @@
       "CHECKOUT.ITEMS.TEXT_TEST",
       "CHECKOUT.ITEMS.NUMBER_TEST",
       "CHECKOUT.WORK",
+      "CHECKOUT.BOOK_2",
       "HOME.BENEFIT_6_TEXT"
     ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2025_рус.pdf",
+          "file": "src/assets/books/OLK/ru/How_to_pass_OLK_test_2025_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2025_каз.pdf",
+          "file": "src/assets/books/OLK/ru/How_to_pass_OLK_test_2025_kz.pdf"
+        }
+      ]
+    },
     "price": 12000,
     "duration": 10
   },
@@ -3641,8 +3656,23 @@
       "CHECKOUT.ITEMS.TEXT_TEST",
       "CHECKOUT.ITEMS.NUMBER_TEST",
       "CHECKOUT.WORK",
+      "CHECKOUT.BOOK_2",
       "HOME.BENEFIT_6_TEXT"
     ],
+    "books": {
+      "ru": [
+        {
+          "name": "Как_пройти_ОЛК_тестирование_2025_рус.pdf",
+          "file": "src/assets/books/OLK/ru/How_to_pass_OLK_test_2025_ru.pdf"
+        }
+      ],
+      "kz": [
+        {
+          "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2025_каз.pdf",
+          "file": "src/assets/books/OLK/ru/How_to_pass_OLK_test_2025_kz.pdf"
+        }
+      ]
+    },
     "price": 18000,
     "duration": 20
   },
