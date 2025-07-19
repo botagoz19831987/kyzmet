@@ -127,8 +127,7 @@
                       <ng-container *ngIf="item?.type === questionType.Checkbox"></ng-container>
 
                       <mat-accordion *ngIf="item.solution && showSolution">
-                        <mat-expansion-panel (opened)="panelOpenState = true"
-                                             (closed)="panelOpenState = false">
+                        <mat-expansion-panel [expanded]="true">
                           <mat-expansion-panel-header [ngClass]="item.correctAnswer === item.selectedAnswer ? 'correct-answer' : 'wrong-answer'">
                             <mat-panel-title>
                               {{ (item.correctAnswer === item.selectedAnswer

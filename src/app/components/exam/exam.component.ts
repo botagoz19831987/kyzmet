@@ -20,7 +20,6 @@ export class ExamComponent implements OnInit {
   public activeLanguage = 'ru';
   examMutateParams;
   showSolution = false;
-  panelOpenState = true;
 
   constructor(
     private languageService: LanguageService,
