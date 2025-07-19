@@ -3641,7 +3641,7 @@
       "kz": [
         {
           "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2025_каз.pdf",
-          "file": "src/assets/books/OLK/ru/How_to_pass_OLK_test_2025_kz.pdf"
+          "file": "src/assets/books/OLK/kz/How_to_pass_OLK_test_2025_kz.pdf"
         }
       ]
     },
@@ -4034,21 +4034,21 @@
       "ru": [
         {
           "name": "Как_легко_сдать_тесты_на_госслужбу_2025_рус.pdf",
-          "file": "src/assets/books/administrativeCivilServiceFirst/ru/How_easy_to_pass_civil_service_tests_2025_ru.pdf"
+          "file": "src/assets/books/regionalPersonnelReserve/ru/How_easy_to_pass_civil_service_tests_2025_ru.pdf"
         },
         {
           "name": "Как_пройти_ОЛК_тестирование_2025_рус.pdf",
-          "file": "src/assets/books/administrativeCivilServiceFirst/ru/How_to_pass_OLK_test_2025_ru.pdf"
+          "file": "src/assets/books/regionalPersonnelReserve/ru/How_to_pass_OLK_test_2025_ru.pdf"
         }
       ],
       "kz": [
         {
           "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2025_каз.pdf",
-          "file": "src/assets/books/administrativeCivilServiceFirst/kz/How_easy_to_pass_civil_service_tests_2025_kz.pdf"
+          "file": "src/assets/books/regionalPersonnelReserve/kz/How_easy_to_pass_civil_service_tests_2025_kz.pdf"
         },
         {
           "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2025_каз.pdf",
-          "file": "src/assets/books/administrativeCivilServiceFirst/kz/How_to_pass_OLK_test_2025_kz.pdf"
+          "file": "src/assets/books/regionalPersonnelReserve/kz/How_to_pass_OLK_test_2025_kz.pdf"
         }
       ]
     },
@@ -4108,21 +4108,21 @@
       "ru": [
         {
           "name": "Как_легко_сдать_тесты_на_госслужбу_2025_рус.pdf",
-          "file": "src/assets/books/administrativeCivilServiceFirst/ru/How_easy_to_pass_civil_service_tests_2025_ru.pdf"
+          "file": "src/assets/books/regionalPersonnelReserve/ru/How_easy_to_pass_civil_service_tests_2025_ru.pdf"
         },
         {
           "name": "Как_пройти_ОЛК_тестирование_2025_рус.pdf",
-          "file": "src/assets/books/administrativeCivilServiceFirst/ru/How_to_pass_OLK_test_2025_ru.pdf"
+          "file": "src/assets/books/regionalPersonnelReserve/ru/How_to_pass_OLK_test_2025_ru.pdf"
         }
       ],
       "kz": [
         {
           "name": "Мемлекеттік_қызмет_тесттерін_оңай_тапсыру_2025_каз.pdf",
-          "file": "src/assets/books/administrativeCivilServiceFirst/kz/How_easy_to_pass_civil_service_tests_2025_kz.pdf"
+          "file": "src/assets/books/regionalPersonnelReserve/kz/How_easy_to_pass_civil_service_tests_2025_kz.pdf"
         },
         {
           "name": "ЖҚБ_тестілеуден_қалай_өтуге_болады_2025_каз.pdf",
-          "file": "src/assets/books/administrativeCivilServiceFirst/kz/How_to_pass_OLK_test_2025_kz.pdf"
+          "file": "src/assets/books/regionalPersonnelReserve/kz/How_to_pass_OLK_test_2025_kz.pdf"
         }
       ]
     },
