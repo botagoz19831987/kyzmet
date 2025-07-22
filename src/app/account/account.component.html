@@ -56,10 +56,10 @@
           || (exams.length > 1 && (activeSection === 'audio' && isAudioPresent)
           || (activeSection === 'video' && isVideoPresent)
           || (activeSection === 'books' && (booksRu?.length || booksKz?.length)))">
-          <div class="row" [class.flex-column]="exams.length > 1
+          <div class="row" [class.flex-column]="(exams.length > 1
           && ((activeSection === 'audio' && isAudioPresent)
           || (activeSection === 'books' && (booksRu?.length || booksKz?.length))
-          || (activeSection === 'video' && isVideoPresent))"
+          || (activeSection === 'video' && isVideoPresent))) || window.innerWidth <= 576"
           >
             <ng-container *ngFor="let exam of exams">
               <div class="col"
